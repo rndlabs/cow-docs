@@ -2,7 +2,7 @@
 
 ## What is CoW Protocol?
 
-CoW Protocol is a fully permissionless trading protocol that leverages [batch auctions](batch-auctions) as its price finding mechanism. CoW Protocol uses batch auctions to maximize liquidity via Coincidence of Wants (CoWs) in addition to tapping all available on-chain liquidity whenever needed. Batch auctions are continuously run by the protocol because the solvers, the parties in charge of finding the most optimal settlement for the batch, are in competition to settle it. The winning solver will be the one that can maximize traders' surplus by either:
+CoW Protocol is a fully permissionless trading protocol that leverages [batch auctions](batch-auctions) as its price finding mechanism. CoW Protocol uses batch auctions to maximise liquidity via Coincidence of Wants (CoWs) in addition to tapping all available on-chain liquidity whenever needed. Batch auctions are continuously run by the protocol because the solvers, the parties in charge of finding the most optimal settlement for the batch, are in competition to settle it. The winning solver will be the one that can maximise traders' surplus by either:
 
 1. Having the most optimal CoW 🐮
 2. Finding the best liquidity sources

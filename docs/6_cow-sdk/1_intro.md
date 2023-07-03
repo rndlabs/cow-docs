@@ -12,7 +12,7 @@ Unlock an endless world of possibilities via **CoW Protocol SDK** ([@cowprotocol
 
 CoW Swap is a Decentralized Application (DApp) and Protocol allowing users to **exchange digital assets directly (peer-to-peer) and via existing trading decentralised exchanges**.
 
-Its novel design maximizes trade efficiency and provides a competitive way to ensure best prices.
+Its novel design maximises trade efficiency and provides a competitive way to ensure best prices.
 
 One of the core ideas is executing **trades in batches**, where users will trade directly using what is known as **“Coincidence of Wants”** (hence the name CoW). In the context of blockchains, batch auctions are a superior mechanism compared to continuous time trading, as they already execute transactions in discrete “blocks” every few seconds.
 
