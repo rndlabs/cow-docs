@@ -7,6 +7,9 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 require('dotenv').config();
 
+// console.log the BASE_URL env variable
+console.log('BASE_URL: ', process.env.BASE_URL);
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
