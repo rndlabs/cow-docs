@@ -29,7 +29,7 @@ We clarify that the `cow-dex-ag-solver-url` is just a placeholder flag that indi
 
 ### Solver deployment
 
-Once the Driver is running, we can now locally deploy our solver server so that it can receive the instances from the Driver, solve them, and then report back the solution to the Driver. The solver receives the instance in JSON format (as described [here](../off-chain-services/in-depth-solver-specification/)) via an HTTP Get request, solves the instance and then, via an HTTP POST request, sends the solution (again in JSON format) to the Driver.
+Once the Driver is running, we can now locally deploy our solver server so that it can receive the instances from the Driver, solve them, and then report back the solution to the Driver. The solver receives the instance in JSON format (as described [here](../4_off-chain-services/in-depth-solver-specification/1_README.md)) via an HTTP Get request, solves the instance and then, via an HTTP POST request, sends the solution (again in JSON format) to the Driver.
 
 An example of a publicly available solver, namely the Dex Cow Solver, can be found here:
 
