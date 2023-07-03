@@ -1,8 +1,8 @@
 # STEP 2: Sign the order
 
-Once you know the price and fee, we can create the order and sign it:
+Once you know the price and protocol fee, we can create the order and sign it:
 
-* Technically the order is just a signed message with your intent to trade, and contains your `Limit Price` and `Fee`.
+* Technically the order is just a signed message with your intent to trade, and contains your `Limit Price` and `Protocol Fee`.
 * As explained before, you can choose your `Limit Price`, but some general approach is to take the current Market Price and apply some slippage tolerance to it. `Received Amount = Expected Amount * (1 - Slippage Tolerance)`
 * The SDK will provide an easy way to sign orders given the raw data
 
@@ -32,7 +32,7 @@ const order = {
   sellAmount,
   buyAmount, 
 
-  // Use the fee you received from the API
+  // Use the protocol fee you received from the API
   feeAmount,
 
   // The appData allows you to attach arbitrary information (meta-data) to the order. Its explained in their own section. For now, you can use this 0x0 value

@@ -12,8 +12,8 @@ description: >-
 * **Buy Amount:** the amount of `buyToken` that is bought in wei
 * **Receiver:** the address that will receive the proceedings of the trade. If this field is zero (the zero address `0x00...0`), then the user who signed the trade is going to receive the funds
 * **Valid To:** the timestamp (in seconds) until which the order is valid
-* **App Data:** extra information about the order. It is ignored by the smart contract outside of signature verification, but may be used offchain for information on the order's origin or for referrals
-* **Fee Amount:** the amount of fees paid in `sellToken` wei. In the case for Limit Orders this field will always be `0.`
+* **App Data:** extra information about the order. It is ignored by the smart contract outside of signature verification, but may be used off-chain for information on the order's origin or for referrals
+* **Fee Amount:** the amount of [protocol fees](../../overview/definitions) paid in `sellToken` wei. In the case for Limit Orders this field will always be `0.`
 * **Kind:** either `sell` or `buy`
 * **Partially Fillable:** whether the order is partially fillable or fill-or-kill. (For the moment this is always FALSE as its not enabled yet)
 * **Sell Token Balance:** from where the sell token balance is withdrawn. It can be `erc20` (directly from the user's ERC-20 balance), `external` (from the user's ERC-20 balancer through Balancer's vault), or `internal` (from the user's Balancer internal balance)

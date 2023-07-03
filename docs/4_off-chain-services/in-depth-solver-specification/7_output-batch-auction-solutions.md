@@ -1,5 +1,11 @@
 # Output: Batch auction solutions
 
+:::caution
+
+For the purposes of this page, any instance of the word "fee" shall be taken to mean "protocol fee" per the [definitions](../../overview/definitions).
+
+:::
+
 The output is also formatted in JSON. We start with an example of how the simplest possible (i.e., empty) response looks like, and then describe the fields it contains.
 
 #### How a valid empty solution looks like
@@ -40,11 +46,11 @@ The "orders" key contains all orders that were selected for execution, and it is
 ```
 {% endcode %}
 
-**Note for partially-fillable orders.** In the case of a partially-fillable order, solvers are also required to report a fee. This is due to the fact that the fraction of the order that will be executed is decided by the solver, so having a predetermined fee assigned to the order is not reasonable. For this reason, the "exec\_fee\_amount" entry cannot be null in the case of a partially fillable order, and instead it should be a stringified integer, describing the fee amount, always denominated in the sell token.
+**Note for partially-fillable orders.** In the case of a partially-fillable order, solvers are also required to report a fee. This is due to the fact that the fraction of the order that will be executed is decided by the solver, so having a predetermined fee assigned to the order is not reasonable. For this reason, the `exec_fee_amount` entry cannot be null in the case of a partially fillable order, and instead it should be a stringified integer, describing the fee amount, always denominated in the sell token.
 
 ## Foreign Liquidity orders
 
-In order to allow solvers to build solutions that use additional liquidity orders, besides the ones contained in the input json, there is a "foreign\_liquidity\_orders" key that maps to a list of "orders", where each entry describes the liquidity order as well as the executed buy and sell amounts. This is a required field. An example entry is given below.
+In order to allow solvers to build solutions that use additional liquidity orders, besides the ones contained in the input json, there is a `foreign_liquidity_orders` key that maps to a list of "orders", where each entry describes the liquidity order as well as the executed buy and sell amounts. This is a required field. An example entry is given below.
 
 {% code overflow="wrap" %}
 ```json

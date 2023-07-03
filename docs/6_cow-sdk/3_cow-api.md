@@ -3,7 +3,7 @@
 The SDK provides access to the CoW API. The CoW API allows you:
 
 * Post orders
-* Get fee quotes
+* Get [protocol fee](../overview/definitions) quotes
 * Get order details
 * Get history of orders: i.e. filtering by account, transaction hash, etc.
 

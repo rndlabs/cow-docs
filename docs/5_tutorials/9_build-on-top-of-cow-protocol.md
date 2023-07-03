@@ -11,7 +11,7 @@ description: >-
 
 ### What is CoW Swap & CoW Protocol
 
-CoW Swap is a Decentralized Application (DApp) and Protocol allowing users to exchange digital assets directly (peer-to-peer) and via existing trading decentralized exchanges.
+CoW Swap is a Decentralized Application (DApp) and Protocol allowing users to exchange digital assets directly (peer-to-peer) and via existing trading decentralised exchanges.
 
 Its novel design maximizes trade efficiency and provides a competitive way to ensure best prices.
 
@@ -38,7 +38,7 @@ Trading in CoW Swap is done by signing off-chain transactions using your web3 wa
 You will need to:
 
 4. Enable token for trading: (only one time) Similarly to other protocols like Uniswap, you need to set an allowance. After this, you can trade. Learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/1.-set-allowance-for-the-sell-token)
-5. Get a price/fee quote from the API: Fees are only paid if the trade is executed (you don’t pay for failed transactions). So this fee covers the settlement of the transaction on-chain. Learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/2.-query-the-fee-endpoint)
+5. Get a price/fee quote from the API: [Protocol fees](../overview/definitions) are only paid if the trade is executed (you don’t pay for failed transactions). So this protocol fee covers the settlement of the transaction on-chain. Learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/2.-query-the-fee-endpoint)
 6. Sign the order using your wallet: Orders are just your signed intent to trade at a desired price or better before some expiration time. You sign orders with your web3 wallet. Learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/4.-signing-the-order)
 7. Post the signed order to the API: Signed orders are posted to the API, so the order can be executed. Read more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/5.-placing-the-order)
 

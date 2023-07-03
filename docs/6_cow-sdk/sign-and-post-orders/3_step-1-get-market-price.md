@@ -2,15 +2,15 @@
 
 #### STEP 1: Get Market Price
 
-To create an order, you need to get a price/fee quote first:
+To create an order, you need to get a price/[protocol fee](../../overview/definitions) quote first:
 
-* The SDK will give you easy access to the API, which returns the `Market Price` and the `Fee` for any given trade you intent to do.
+* The SDK will give you easy access to the API, which returns the `Market Price` and the `Protocol Fee` for any given trade you intent to do.
 * The returned `Market Price` is not strictly needed, you can use your own pricing logic.
   * You can choose a price that is below this Market price (**Market Order**), or above Market Price (**Limit Order**).
-* The `Fee` however is very important.
+* The `Protocol Fee` however is very important.
   * It is the required amount in sell token the trader agrees on paying for executing the order onchain.
   * Normally, its value is proportional to the current Gas Price of the network.
-  * This fee is never charged if you don't trade.
+  * This protocol fee is never charged if you don't trade.
 
 To get the quote, you simply specify the trade you intent to do:
 
@@ -31,4 +31,4 @@ const quoteResponse = await orderBookApi.getQuote({
 const { sellToken, buyToken, validTo, buyAmount, sellAmount, receiver, feeAmount } = quoteResponse.quote
 ```
 
-Now that we know the `Market Price` and a `Fee`, let's review in next section how to define and sign the new order.
+Now that we know the `Market Price` and a `Protocol Fee`, let's review in next section how to define and sign the new order.

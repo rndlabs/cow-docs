@@ -1,5 +1,11 @@
 # The Batch Auction Optimization Problem
 
+:::caution
+
+For the purposes of this page, any instance of the word "fee" shall be taken to mean "protocol fee" per the [definitions](../../overview/definitions).
+
+:::
+
 In this section, we describe all the different components of the optimization problem that needs to be solved within each batch.
 
 ## User Orders

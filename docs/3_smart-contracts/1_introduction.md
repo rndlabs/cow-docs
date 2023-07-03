@@ -1,6 +1,6 @@
 # Introduction
 
-CoW Protocol is a collection of smart contracts that settle user orders on-chain while leveraging other sources of liquidity. The goal of the protocol is bundling multiple user orders together to minimize fees deriving from using external liquidity sources and stave off miner-extractable value.
+CoW Protocol is a collection of smart contracts that settle user orders on-chain while leveraging other sources of liquidity. The goal of the protocol is bundling multiple user orders together to minimize [liquidity provider fees](../overview/definitions) deriving from using external liquidity sources and stave off miner-extractable value.
 
 User orders are collected off-chain and settled at a later step by a solver. A solver is any of the addresses authorized to settle user orders together in GPv2. They are in charge of monitoring on-chain sources of liquidity and providing users the best on-chain prices in the case where the order cannot be matched perfectly with each other.
 

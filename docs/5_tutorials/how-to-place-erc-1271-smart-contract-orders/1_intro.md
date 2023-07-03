@@ -16,7 +16,7 @@ CoW protocol supports ERC-1271 signatures. While this is typically thought of as
   * CoW Protocol orders: signing of typed data
   * ERC-1271: signature validation standard
 * Smart Contract Wallet Orders
-  * Safe: How to trade without gas fees
+  * Safe: How to trade without [gas fees](../../overview/definitions)
 * Smart Orders
   * Good After Time Orders
   * Additional Use Cases

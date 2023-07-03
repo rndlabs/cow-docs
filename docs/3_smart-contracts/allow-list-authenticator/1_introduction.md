@@ -4,7 +4,7 @@ The allow-list authenticator contract determines which addresses are solvers. Be
 
 The allow-list authenticator is the only contract that is deployed as a proxy.
 
-Eventually, we plan to deploy a new proxy implementation with the goal of making the choice of who is a solver more decentralized.
+Eventually, we plan to deploy a new proxy implementation with the goal of making the choice of who is a solver more decentralised.
 
 For example, we might introduce the option of becoming a solver for addresses that are willing to stake some funds as collateral.
 

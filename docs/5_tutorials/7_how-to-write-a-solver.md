@@ -51,7 +51,7 @@ curl -vX POST "http://127.0.0.1:8000/solve" -H  "accept: application/json" -H  "
 You can get some inspiration from prod examples here:\
 [http://gnosis-europe-gpv2-solver.s3-website.eu-central-1.amazonaws.com/index.html#data/prod/2022/01/](http://gnosis-europe-gpv2-solver.s3-website.eu-central-1.amazonaws.com/index.html#data/prod/2022/01/)
 
-Make sure to test what happens when there is a COW ![:cow:](https://assets.hackmd.io/build/emojify.js/dist/images/basic/cow.png)
+Make sure to test what happens when there is a CoW ![:cow:](https://assets.hackmd.io/build/emojify.js/dist/images/basic/cow.png)
 
 ### Settling Real Orders <a href="#settling-real-orders" id="settling-real-orders"></a>
 

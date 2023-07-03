@@ -4,6 +4,12 @@ description: This section describes the format of Batch Auction Instances.
 
 # Input: Batch auction instances
 
+:::caution
+
+For the purposes of this page, any instance of the word "fee" shall be taken to mean "protocol fee" per the [definitions](../../overview/definitions).
+
+:::
+
 The input batch is formatted in [JSON](https://www.json.org/json-en.html), described in the following sections.
 
 Note: To avoid precision loss, some numerical literals are encoded as strings, referred below as _stringified_.

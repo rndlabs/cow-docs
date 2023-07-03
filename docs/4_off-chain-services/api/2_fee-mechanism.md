@@ -1,5 +1,11 @@
 # Fee Mechanism
 
+:::caution
+
+For the purposes of this page, any instance of the word "fee" shall be taken to mean "protocol fee" per the [definitions](../../overview/definitions).
+
+:::
+
 In CoW Protocol, the blockchain transactions that settle user orders are submitted by the settlement backend run by the solvers, which incurs gas costs. This cost is forwarded to orders in the form of protocol fees. The aim of this protocol fee is for the solvers to cover the costs of executing the order within a batch auction.
 
 As you know, CoW Protocol works with off-chain transactions in the form of signed orders. These orders contain a field called "feeAmount" which is the maximum amount of fees that can be charged to the owner of the order. When the order gets executed, the fee is enforced by the settlement smart contract and given to the backend solver that submitted the settlement solution that contained such an order.

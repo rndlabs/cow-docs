@@ -4,7 +4,7 @@
 
 In order to trade, you will need to create a valid order first.
 
-On the contrary to other decentralised exchanges, creating orders is free in CoW Protocol. This is because, one of the most common ways to do it is by created offchain signed messages (meta-transactions, uses `EIP-712` or `EIP-1271`).
+On the contrary to other decentralised exchanges, creating orders is free in CoW Protocol. This is because, one of the most common ways to do it is by created off-chain signed messages (meta-transactions, uses `EIP-712` or `EIP-1271`).
 
 Posting orders is a three steps process:
 

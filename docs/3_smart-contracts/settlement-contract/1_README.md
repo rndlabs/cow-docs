@@ -16,7 +16,7 @@ Interactions allow solvers to execute arbitrary calls to any on-chain contract.
 
 Normally, they are used to interact with other on-chain liquidity providers, for example, to make a swap call to Uniswap.
 
-They can also be used for other purposes: for example, an interaction can be used to approve Uniswap for trading with the tokens stored in the settlement contract, as well as withdrawing the accumulating fee from the contracts when the amount becomes too large.
+They can also be used for other purposes: for example, an interaction can be used to approve Uniswap for trading with the tokens stored in the settlement contract, as well as withdrawing the accumulating [protocol fees](../../overview/definitions) from the contracts when the amount becomes too large.
 
 **2.Trades**
 
@@ -41,8 +41,8 @@ Here is a complete list of the parameters of a GPv2 order and the corresponding 
 * **Buy Amount:** the amount of `buyToken` that is bought in wei
 * **Receiver:** the address that will receive the proceedings of the trade. If this field is zero (the zero address `0x00...0`), then the user who signed the trade is going to receive the funds
 * **Valid To:** the timestamp (in seconds) until which the order is valid
-* **App Data:** extra information about the order. It is ignored by the smart contract outside of signature verification, but may be used offchain for information on the order's origin or for referrals
-* **Fee Amount:** the amount of fees paid in `sellToken` wei.
+* **App Data:** extra information about the order. It is ignored by the smart contract outside of signature verification, but may be used off-chain for information on the order's origin or for referrals
+* **Fee Amount:** the amount of protocol fees paid in `sellToken` wei.
 * **Kind:** either `sell` or `buy`
 * **Partially Fillable:** whether the order is partially fillable or fill-or-kill. (For the moment this is always FALSE as its not enabled yet)
 * **Sell Token Balance:** from where the sell token balance is withdrawn. It can be `erc20` (directly from the user's ERC-20 balance), `external` (from the user's ERC-20 balancer through Balancer's vault), or `internal` (from the user's Balancer internal balance)

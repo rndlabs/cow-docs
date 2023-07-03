@@ -13,7 +13,7 @@ Even though Ethereum transactions are executed atomically all at the same time w
 
 Besides being able to establish a uniform clearing price across the trades that happen within a batch, CoW Protocol Batch Auction price finding mechanism is also designed to offer a better price that no other CFMM can offer. Liquidity fragmentation is a big problem within the DeFi space that forces users to be constantly checking what pools can give the best prices for their trades. Batch Auctions are one way to solve the liquidity fragmentation problem as they allow CoW Protocol to offer the traders the chance to be part of a CoW (Coincidence of Wants) to share the liquidity amongst their orders, and in the event that with those orders they still not have enough liquidity, then pair the excess trades with the on-chain liquidity that can give them the best price. Essentially, the idea behind Batch Auctions and CoWs is to turn the protocol into a gigantic barter economy, where users can either trade directly against each other or go to specialized markets to execute what they couldn't barter in a peer to peer fashion.
 
-But the best thing is that batch auctions allow the protocol the ability to combine off-chain interactions (COWs) with on-chain interactions, all in the same transaction.
+But the best thing is that batch auctions allow the protocol the ability to combine off-chain interactions (CoWs) with on-chain interactions, all in the same transaction.
 
 ![](/img/Batch Auction \_ COW.png)
 

@@ -17,7 +17,7 @@ def cowswap_sell(safe, sell_token, buy_token):
     gnosis_settlement = safe.contract("0x9008D19f58AAbD9eD0D60971565AA8510560ab41")
     amount = sell_token.balanceOf(safe.address)
 
-    # get the fee + the buy amount after fee
+    # get the protocol fee + the buy amount after protocol fee
     fee_and_quote = "https://api.cow.fi/mainnet/api/v1/feeAndQuote/sell"
     get_params = {
         "sellToken": sell_token.address,
@@ -40,7 +40,7 @@ def cowswap_sell(safe, sell_token, buy_token):
     order_payload = {
         "sellToken": sell_token.address,
         "buyToken": buy_token.address,
-        "sellAmount": str(amount-fee_amount), # amount that we have minus the fee we have to pay
+        "sellAmount": str(amount-fee_amount), # amount that we have minus the protocol fee we have to pay
         "buyAmount": str(buy_amount_after_fee), # buy amount fetched from the previous call
         "validTo": deadline,
         "appData": web3.Web3.keccak(text="yearn goes moooooo").hex(), # required field, do not change :)

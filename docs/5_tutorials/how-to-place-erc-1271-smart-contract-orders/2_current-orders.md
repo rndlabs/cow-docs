@@ -1,6 +1,6 @@
 # Current Orders
 
-CoW Protocol orders are, in essence, just a "blob" of structured data. As you see here, they are a set of order fields that include all the required information for that order. For example, the sell token, buy token, amounts, pro-rated fee, etc.
+CoW Protocol orders are, in essence, just a "blob" of structured data. As you see here, they are a set of order fields that include all the required information for that order. For example, the sell token, buy token, amounts, pro-rated [protocol fee](../../overview/definitions), etc.
 
 ![](https://lh6.googleusercontent.com/rV4NmKo8smr0lp4LGFiHXGC-KI09za3IC4TSfOT9l6CwYw9WEsq4tYXjKOt9K-5hA1W5h-s1dRZU-av84Lq-G47_af3fO6erG6VqMlnloo20vjzdB09ZjPaLAqpjBpIrKJfV6_hX6v5OX8zOy56rVeFwLx-pGvU2NvsEPJfLg9kieLb09jG-lxD9X2pC)
 

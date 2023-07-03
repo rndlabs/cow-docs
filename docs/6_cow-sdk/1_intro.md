@@ -10,7 +10,7 @@ Unlock an endless world of possibilities via **CoW Protocol SDK** ([@cowprotocol
 
 ### First, lets introduce CoW Swap and CoW Protocol <a href="#get-started" id="get-started"></a>
 
-CoW Swap is a Decentralized Application (DApp) and Protocol allowing users to **exchange digital assets directly (peer-to-peer) and via existing trading decentralized exchanges**.
+CoW Swap is a Decentralized Application (DApp) and Protocol allowing users to **exchange digital assets directly (peer-to-peer) and via existing trading decentralised exchanges**.
 
 Its novel design maximizes trade efficiency and provides a competitive way to ensure best prices.
 

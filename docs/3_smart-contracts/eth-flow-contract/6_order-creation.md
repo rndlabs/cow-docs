@@ -26,7 +26,7 @@ As of now, eth-flow orders are not matched by the CoW Swap infrastructure unless
 
 Some checks are performed on order creation. Failing any of these checks means that the transaction reverts.
 
-1. The amount of ETH sent along with the transaction must be exactly what is needed to cover the sell amount plus the fees.
+1. The amount of ETH sent along with the transaction must be exactly what is needed to cover the sell amount plus the [protocol fee](../../overview/definitions).
 2. The order must be valid at the time the transaction is mined.
 
 The order parameters are used to compute the order digest according to the [order mapping](4_user-and-eth-flow-contract-orders.md). As mentioned before, the call reverts if an order with the same digest already exists or is invalidated; otherwise a new order is added to storage:

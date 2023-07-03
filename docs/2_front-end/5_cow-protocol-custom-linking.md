@@ -37,7 +37,7 @@ All parameters are optional.
 
 ## Wrapped native currency
 
-Each network has a native currency and it's wrapped version. Native currency is needed to pay transaction fees.
+Each network has a native currency and it's wrapped version. Native currency is needed to pay [transaction fees](../overview/definitions).
 
 Native and wrapped currencies per network:
 * Ethereum Mainnet: **WETH** - wrapped ETH

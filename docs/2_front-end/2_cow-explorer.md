@@ -1,6 +1,6 @@
 # CoW Explorer
 
-CoW Protocol Explorer is an "Etherscan" like interface for the CoW Protocol. Given that CoW Protocol leverages meta transactions, aka signed/offchain orders, the transactions submitted by the users are completely offline/off-chain and are therefore not visible on-chain until they have been fully executed. Because of it, the Explorer exists to help users find their orders, and be informed about the order details and their state.
+CoW Protocol Explorer is an "Etherscan" like interface for the CoW Protocol. Given that CoW Protocol leverages meta transactions, aka signed/off-chain orders, the transactions submitted by the users are completely offline/off-chain and are therefore not visible on-chain until they have been fully executed. Because of it, the Explorer exists to help users find their orders, and be informed about the order details and their state.
 
 ![Example of the detailed view for a CoW Protocol Order displayed on CoW Protocol Explorer](/img/Cow\_Explorer.png)
 
@@ -17,7 +17,7 @@ CoW Protocol Explorer is an "Etherscan" like interface for the CoW Protocol. Giv
 11. **Execution price:** Price at which the order has been executed. This value can not be lower than the limit price.
 12. **Filled:** Percentage of the order that the protocol has been able to execute.
 13. **Order Surplus:** In the event of the protocol finding a better price than the user's limit price, order surplus quantifies in percentage and tokens how much more the user got above the asked amount.
-14. **Fees:** Amount of fees that have been paid by the user.
+14. **Fees:** Amount of protocol fees that have been paid by the user.
 
 #### States
 

@@ -7,7 +7,7 @@ CoW Swap is the first trading interface built on top of CoW Protocol. It allows 
 CoW Swap's interface may look very familiar to the average DeFi user, as it's based on the Open Source code used for building the Uniswap front end. Although it looks similar, there are huge differences between the two products, which are:
 
 * Uniswap uses only Uniswap pools; CoW Swap can settle orders on Uniswap, Sushiswap, 1inch, Paraswap and more to come (Matcha, Balancer...) giving users the best price
-* CoW Swap enables users to trade directly with other users without going through any pools when there is Coincidence of Wants (CoWs), removing the need to pay Liquidity Provider fees.
+* CoW Swap enables users to trade directly with other users without going through any pools when there is Coincidence of Wants (CoWs), removing the need to pay [Liquidity Provider fees](../overview/definitions).
 * Orders on CoW Swap are signed messages and therefore gasless, costing nothing to submit. In case of price movements against your order, in the worst case, the order will expire and you won't spend gas on failed transactions, while on Uniswap you would still spend it.
 
 #### Providing liquidity
