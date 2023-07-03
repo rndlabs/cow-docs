@@ -1,6 +1,6 @@
 # Learnings & Improvements
 
-CoW Protocol, is the second iteration of what was previously known as Gnosis Protocol. It is for this reason those digging through repositories may see reference to `GPv1`, or `GPv2`, such as the [settlement contract](../smart-contracts/settlement/introduction) which is called `GPv2Settlement`.
+CoW Protocol, is the second iteration of what was previously known as Gnosis Protocol. It is for this reason those digging through repositories may see reference to `GPv1`, or `GPv2`, such as the [settlement contract](../smart-contracts/settlement-contract/introduction) which is called `GPv2Settlement`.
 
 Now, back in history... 📚
 

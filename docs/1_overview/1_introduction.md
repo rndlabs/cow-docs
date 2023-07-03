@@ -18,7 +18,7 @@ Instead of using a central operator or a constant function market maker to deter
 
 1. Solvers compete against each other to submit the most optimal batch settlement.
 2. The winning solver submits the successful batch settlement solution to the chain.
-3. The protocol rewards the winning solver with tokens, incentivising the solver to solve the [batch auction optimisation problem](../off-chain-services/the-batch-auction-optimisation-problem).
+3. The protocol rewards the winning solver with tokens, incentivising the solver to solve the [batch auction optimisation problem](../off-chain-services/in-depth-solver-specification/the-batch-auction-optimisation-problem).
 
 It is very important that there is healthy competition amongst solvers to ensure competitive batch optimisation, and therefore competitive clearing prices for the protocol's users. As such, *anyone* can become a solver, provided the following requirements are met:
 

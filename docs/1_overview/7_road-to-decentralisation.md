@@ -25,7 +25,7 @@ Both the user interface and the smart contracts are pieces that are already at 1
 
 ### 👉 Phase 2
 
-While the core [settlement contract](../smart-contracts/settlement/introduction) is *not* upgradable, the logic of how solvers are *authenticated* is upgradeable. In phase 2, we envision CoW DAO to put in place a permissionless model, where anyone can become an authenticated solver as long as they stake the asset and amount defined by the Cow DAO. For this phase, the DAO would agree on a set of rules (e.g. under what circumstances batches are allowed to be split into multiple ones, which set of on-chain liquidity has to be at least considered for a solution, etc).
+While the core [settlement contract](../smart-contracts/settlement-contract/introduction) is *not* upgradable, the logic of how solvers are *authenticated* is upgradeable. In phase 2, we envision CoW DAO to put in place a permissionless model, where anyone can become an authenticated solver as long as they stake the asset and amount defined by the Cow DAO. For this phase, the DAO would agree on a set of rules (e.g. under what circumstances batches are allowed to be split into multiple ones, which set of on-chain liquidity has to be at least considered for a solution, etc).
 
 Upon violation of these rules, the DAO can vote to slash a solver’s stake. The set of rules could be coded into a "verifier client" that members of the DAO run in order to indicate when a slashing vote should be cast.
 

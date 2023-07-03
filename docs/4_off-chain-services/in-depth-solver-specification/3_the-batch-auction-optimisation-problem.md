@@ -1,4 +1,4 @@
-# The Batch Auction Optimization Problem
+# The Batch Auction Optimisation Problem
 
 :::caution
 
