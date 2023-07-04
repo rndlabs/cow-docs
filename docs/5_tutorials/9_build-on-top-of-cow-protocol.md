@@ -75,7 +75,7 @@ The protocol requires valid signed orders. There’s different ways in which som
 
 * Off-chain signing (EIP-712): Allow gas-less trading for EOA like Metamask. Learn [how to sign orders](how-to-submit-orders-via-the-api/signing-the-order)
 * Pre-sign: Sign an order using an ethereum transaction. Convenient for Smart Contract integrations. See the [setPreSignature](https://github.com/cowprotocol/contracts/blob/7842d494c63224387e7e67f75bcd31775543098c/src/contracts/mixins/GPv2Signing.sol#L86) solidity function for more details
-* Smart Contract Signing (EIP-1271): Gas-less signing for smart contracts. [Here](how-to-place-erc-1271-smart-contract-orders/introduction) is a tutorial on how to use this type of signatures.
+* Smart Contract Signing (ERC-1271): Gas-less signing for smart contracts. [Here](how-to-place-erc-1271-smart-contract-orders/introduction) is a tutorial on how to use this type of signatures.
 
 For more information on Signed orders, read [here](../overview/order-intents).
 

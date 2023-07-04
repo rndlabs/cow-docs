@@ -8,7 +8,7 @@ The protocol supports four different signing methods:
 
 **2. EOA signatures with \[EIP-712 typed data]** ([https://eips.ethereum.org/EIPS/eip-712](https://eips.ethereum.org/EIPS/eip-712)).
 
-**3. Smart-contract \[EIP-1271 signatures]** ([https://eips.ethereum.org/EIPS/eip-1271](https://eips.ethereum.org/EIPS/eip-1271)).
+**3. Smart-contract \[ERC-1271 signatures]** ([https://eips.ethereum.org/EIPS/eip-1271](https://eips.ethereum.org/EIPS/eip-1271)).
 
 **4. Pre-signing the order with an onchain transaction from the owner of the order.**
 
@@ -44,7 +44,7 @@ You can retrieve the domain separator from the contract by calling the `domainSe
 
 1. **Computing the order digest**
 
-Signatures built with the `eth_sign`, EIP-712, and EIP-1271 schemes are created based on an order digest.
+Signatures built with the `eth_sign`, EIP-712, and ERC-1271 schemes are created based on an order digest.
 
 The order digest is a sequence of 32 bytes that uniquely describes the parameters of an order.
 
@@ -103,11 +103,11 @@ Many Ethereum libraries have some degree of support for sign typed data without 
 
 In any case, you may want to read about the domain separator and the order struct.
 
-1. **EIP-1271 signatures**
+1. **ERC-1271 signatures**
 
 This signing mechanism is the only option that provides offline signatures to orders originating from smart contracts.
 
-In order to support smart-contract orders, the trading smart contract must implement the [EIP-1271 interface](https://eips.ethereum.org/EIPS/eip-1271#specification).
+In order to support smart-contract orders, the trading smart contract must implement the [ERC-1271 interface](https://eips.ethereum.org/EIPS/eip-1271#specification).
 
 ```
 signature = traderAddress ‖ eip1271Signature
@@ -119,7 +119,7 @@ The components are:
 * `‖`, the byte-concatenation function
 * `eip1271Signature`, any bitstring that is a valid signature for the contract for the order
 
-For an order to be accepted, the EIP-1271 signature must be valid for the `orderDigest` message, that is in Solidity:
+For an order to be accepted, the ERC-1271 signature must be valid for the `orderDigest` message, that is in Solidity:
 
 ```
 isValidSignature(orderDigest, eip1271Signature) == MAGICVALUE
