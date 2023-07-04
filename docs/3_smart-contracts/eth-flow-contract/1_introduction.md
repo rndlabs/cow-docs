@@ -1,6 +1,6 @@
 # ETH Flow Contract
 
-The CoW ETH Flow Contract is a new way of trading on CoW Protocol. This new way of trading is specifically designed to handle ETH, since the CoW Protocol Settlement Contract is only compatible with ERC20 tokens.
+The CoW ETH Flow Contract is a new way of trading on CoW Protocol. This new way of trading is specifically designed to handle ETH, since the CoW Protocol Settlement Contract is only compatible with ERC-20 tokens.
 
 This new swapping method was developed for those users who have ETH (and no WETH) in their wallets, and thus do not have WETH approved in the settlement contract. The goal of this new swapping flow is to avoid forcing the user to convert their ETH into WETH and having them set the approval of WETH in the settlement contract, thus saving time and costs in the process.
 

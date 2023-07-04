@@ -44,4 +44,4 @@ def withdraw_and_approve_tokens_sep_21():
 
 After testing in a fork, `ape-safe` will ask for your account password and submit the TX to the multisig.
 
-After the TX is executed, we would have our vanilla ERC20 tokens plus all approvals needed to submit an order.
+After the TX is executed, we would have our vanilla ERC-20 tokens plus all approvals needed to submit an order.

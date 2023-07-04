@@ -11,12 +11,12 @@ This can either be done using Etherscan, e.g. to set an unlimited allowance for 
 It can also be done programmatically e.g. using the following ethers TypeScript snippet:
 
 ```typescript
-import ERC20 from "@openzeppelin/contracts/build/contracts/ERC20.json";
+import ERC20 from "@openzeppelin/contracts/build/contracts/ERC-20.json";
 import { Contract, ethers } from "ethers";
 
 const address = “0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48” // USDC
 
-const erc20 = new Contract(address, ERC20.abi, ethers.provider);
+const erc20 = new Contract(address, ERC-20.abi, ethers.provider);
 const tx = await erc20
   .connect(“your address”)
   .approve(“0xC92E8bdf79f0507f65a392b0ab4667716BFE0110”, ethers.constants.MaxUint256);
