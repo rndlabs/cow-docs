@@ -231,6 +231,6 @@ An example is given below.
 
 ## Score
 
-The score is the "bid" a solver makes for the batch, as it will get ranked according to it. The protocol picks the solution with the highest score, given that it is strictly positive. More details about the meaning of the score can be found [here](4_solver-auction-and-rewards.md).
+The score is the "bid" a solver makes for the batch, as it will get ranked according to it. The protocol picks the solution with the highest score, given that it is strictly positive. More details about the meaning of the score can be found [here](solver-auction-and-rewards).
 
 We clarify here that the score is a stringified integer, that is denominated in wei.

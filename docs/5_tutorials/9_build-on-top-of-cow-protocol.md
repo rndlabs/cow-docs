@@ -37,12 +37,12 @@ Trading in CoW Swap is done by signing off-chain transactions using your web3 wa
 
 You will need to:
 
-4. Enable token for trading: (only one time) Similarly to other protocols like Uniswap, you need to set an allowance. After this, you can trade. Learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/1.-set-allowance-for-the-sell-token)
-5. Get a price/fee quote from the API: [Protocol fees](../overview/definitions) are only paid if the trade is executed (you don’t pay for failed transactions). So this protocol fee covers the settlement of the transaction on-chain. Learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/2.-query-the-fee-endpoint)
-6. Sign the order using your wallet: Orders are just your signed intent to trade at a desired price or better before some expiration time. You sign orders with your web3 wallet. Learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/4.-signing-the-order)
-7. Post the signed order to the API: Signed orders are posted to the API, so the order can be executed. Read more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/5.-placing-the-order)
+4. Enable token for trading: (only one time) Similarly to other protocols like Uniswap, you need to set an allowance. After this, you can trade. Learn more [here](how-to-submit-orders-via-the-api/set-allowance-for-the-sell-token)
+5. Get a price/fee quote from the API: [Protocol fees](../overview/definitions) are only paid if the trade is executed (you don’t pay for failed transactions). So this protocol fee covers the settlement of the transaction on-chain. Learn more [here](how-to-submit-orders-via-the-api/query-the-fee-endpoint)
+6. Sign the order using your wallet: Orders are just your signed intent to trade at a desired price or better before some expiration time. You sign orders with your web3 wallet. Learn more [here](how-to-submit-orders-via-the-api/signing-the-order)
+7. Post the signed order to the API: Signed orders are posted to the API, so the order can be executed. Read more [here](how-to-submit-orders-via-the-api/placing-the-order)
 
-💡 TIP: One easy way to understand the steps above is to see the [DEMO: SDK Examples](https://vigilant-heisenberg-dba3c1.netlify.app/) or check the [SDK documents](https://docs.cow.fi/cow-sdk)
+💡 TIP: One easy way to understand the steps above is to see the [DEMO: SDK Examples](https://vigilant-heisenberg-dba3c1.netlify.app/) or check the [SDK documents](../cow-sdk/introduction)
 
 #### Check order status
 
@@ -73,11 +73,11 @@ It’s the “Etherscan” for CoW protocol, so you will be able to find, among 
 
 The protocol requires valid signed orders. There’s different ways in which someone could sign an order:
 
-* Off-chain signing (EIP-712): Allow gass-less trading for EOA like Metamask. Learn [how to sign orders](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/4.-signing-the-order)
+* Off-chain signing (EIP-712): Allow gass-less trading for EOA like Metamask. Learn [how to sign orders](how-to-submit-orders-via-the-api/signing-the-order)
 * Presign: Sign an order using an ethereum transaction. Convenient for Smart Contract integrations. See the [setPresign](https://github.com/cowprotocol/contracts/blob/7842d494c63224387e7e67f75bcd31775543098c/src/contracts/mixins/GPv2Signing.sol#L86) solidity function for more details
-* Smart Contract Signing (EIP-1271): Gass-less signing for smart contracts. [Here](https://docs.cow.fi/tutorials/how-to-place-erc-1271-smart-contract-orders) is a tutorial on how to use this type of signatures.
+* Smart Contract Signing (EIP-1271): Gass-less signing for smart contracts. [Here](how-to-place-erc-1271-smart-contract-orders/introduction) is a tutorial on how to use this type of signatures.
 
-For more information on Signed orders, read [here](https://docs.cow.fi/overview/signed-orders).
+For more information on Signed orders, read [here](../overview/order-intents).
 
 ## 💡Resources
 
@@ -97,7 +97,7 @@ The documentation is exposed using Swagger docs:
 
 The API is available in 3 different Networks: Mainnet, Gnosis Chain and Görli testnet.
 
-For more information about the API, learn more [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/5.-placing-the-order)
+For more information about the API, learn more [here](how-to-submit-orders-via-the-api/placing-the-order)
 
 ### SDK
 
@@ -105,7 +105,7 @@ The software development kit (SDK) is a Javascript library that provides tooling
 
 It is written in Typescript, making it simpler to use in both a Typescript or a plain Javascript project.
 
-More info in [SDK documents](https://docs.cow.fi/cow-sdk) or see an example on how to use it [here](https://github.com/anxolin/cow-examples/blob/main/src/pages/api/Orders.js#L6)
+More info in [SDK documents](../cow-sdk/introduction) or see an example on how to use it [here](https://github.com/anxolin/cow-examples/blob/main/src/pages/api/Orders.js#L6)
 
 ### The graph
 

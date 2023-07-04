@@ -89,7 +89,7 @@ The "orders" key maps to a dictionary containing the set of user and liquidity o
     * `"amount"`: a stringified integer denoting the maximum fee amount;
     * `"token"`: the token id of the token in which the fee amount is denominated in. It always coincides with the sell token.
 
-    We stress here that all fill-or-kill orders have a non-zero predetermined fee, while all partially-fillable orders have a zero fee, and the actual fee charged to the user is provided by the solvers when they propose an execution of such an order. More details are provided in the [next](7_output-batch-auction-solutions.md) section.
+    We stress here that all fill-or-kill orders have a non-zero predetermined fee, while all partially-fillable orders have a zero fee, and the actual fee charged to the user is provided by the solvers when they propose an execution of such an order. More details are provided in the [next](output-batch-auction-solutions) section.
 * `"cost"`:
   * `"amount"`: a stringified integer denoting the cost/gas overhead associated with executing the order; we clarify that this is only an estimate of the cost of moving the funds from and back to the user, and not the cost of interacting with AMMs etc, and is only meant to help solvers do a preliminary cost estimation when computing their solutions.
   * `"token"`: the token id of the token in which the cost amount is denominated in. On Ethereum mainnet, it always coincides with WETH.

@@ -16,27 +16,27 @@ The following tables contain the contract address for each network:
 
 **Settlement Contract**
 
-| Network      | Address                                    |   |
-| ------------ | ------------------------------------------ | - |
-| Mainnet      | 0x9008D19f58AAbD9eD0D60971565AA8510560ab41 |   |
-| Gnosis Chain | 0x9008D19f58AAbD9eD0D60971565AA8510560ab41 |   |
-| Rinkeby      | 0x9008D19f58AAbD9eD0D60971565AA8510560ab41 |   |
+| Network      | Address                                    |
+| ------------ | ------------------------------------------ |
+| Mainnet      | 0x9008D19f58AAbD9eD0D60971565AA8510560ab41 |
+| Gnosis Chain | 0x9008D19f58AAbD9eD0D60971565AA8510560ab41 |
+| Rinkeby      | 0x9008D19f58AAbD9eD0D60971565AA8510560ab41 |
 
 **Allow-list authentication contract**
 
-| Network      | Address                                    |   |
-| ------------ | ------------------------------------------ | - |
-| Mainnet      | 0x2c4c28DDBdAc9C5E7055b4C863b72eA0149D8aFE |   |
-| Gnosis Chain | 0x2c4c28DDBdAc9C5E7055b4C863b72eA0149D8aFE |   |
-| Rinkeby      | 0x2c4c28DDBdAc9C5E7055b4C863b72eA0149D8aFE |   |
+| Network      | Address                                    |
+| ------------ | ------------------------------------------ |
+| Mainnet      | 0x2c4c28DDBdAc9C5E7055b4C863b72eA0149D8aFE |
+| Gnosis Chain | 0x2c4c28DDBdAc9C5E7055b4C863b72eA0149D8aFE |
+| Rinkeby      | 0x2c4c28DDBdAc9C5E7055b4C863b72eA0149D8aFE |
 
 **Vault relayer contract**
 
-| Network      | Address                                    |   |
-| ------------ | ------------------------------------------ | - |
-| Mainnet      | 0xC92E8bdf79f0507f65a392b0ab4667716BFE0110 |   |
-| Gnosis Chain | 0xC92E8bdf79f0507f65a392b0ab4667716BFE0110 |   |
-| Rinkeby      | 0xC92E8bdf79f0507f65a392b0ab4667716BFE0110 |   |
+| Network      | Address                                    |
+| ------------ | ------------------------------------------ |
+| Mainnet      | 0xC92E8bdf79f0507f65a392b0ab4667716BFE0110 |
+| Gnosis Chain | 0xC92E8bdf79f0507f65a392b0ab4667716BFE0110 |
+| Rinkeby      | 0xC92E8bdf79f0507f65a392b0ab4667716BFE0110 |
 
 
 
