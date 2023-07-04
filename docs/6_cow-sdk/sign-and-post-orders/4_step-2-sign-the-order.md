@@ -28,14 +28,14 @@ const order = {
 
   // Limit Price
   //    You can apply some slippage tolerance here to make sure the trade is executed. 
-  //    CoW protocol protects from MEV, so it can work with higher slippages
+  //    CoW Protocol protects from MEV, so it can work with higher slippages
   sellAmount,
   buyAmount, 
 
   // Use the protocol fee you received from the API
   feeAmount,
 
-  // The appData allows you to attach arbitrary information (meta-data) to the order. Its explained in their own section. For now, you can use this 0x0 value
+  // The appData allows you to attach arbitrary information (metadata) to the order. Its explained in their own section. For now, you can use this 0x0 value
   appData: '0x0000000000000000000000000000000000000000000000000000000000000000'
 }
 

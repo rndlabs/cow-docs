@@ -3,13 +3,13 @@
 In order to follow if/when your order has been matched you can either subscribe to “Trade” events by the [Settlement Contract](https://etherscan.io/address/0x3328f5f2cEcAF00a2443082B657CedEAf70bfAEf):
 
 ```typescript
-import GPv2SettlementArtefact from "@gnosis.pm/gp-v2-contracts/deployments/mainnet/GPv2Settlement.json";
+import GPv2SettlementArtifact from "@gnosis.pm/gp-v2-contracts/deployments/mainnet/GPv2Settlement.json";
 import { Contract, ethers } from "ethers";
 
 const uid = <uid to follow>;
 const TRADE_TIMEOUT_SECONDS = 30*60
 
-const settlement = new Contract(“0x9008D19f58AAbD9eD0D60971565AA8510560ab41”, GPv2SettlementArtefact.abi, ethers.provider)
+const settlement = new Contract(“0x9008D19f58AAbD9eD0D60971565AA8510560ab41”, GPv2SettlementArtifact.abi, ethers.provider)
 const traded = new Promise((resolve: (value: boolean) => void) => {
     ethers.provider.on(settlement.filters.Trade(trader), (log) => {
       // Hacky way to verify that the UID is part of the event data
@@ -51,7 +51,6 @@ Or you can query our API using the order ID that you generated earlier
 
 If your order was partially fillable and traded in multiple chunks you may find one entry per trade.
 
-This is it. We hope you have been able to follow this tutorial end to end and made a successful trade. If you have any questions or are planning to write some utility software (e.g. signing logic in another language) please reach out to us on [Discord](https://discord.gg/cowswap), we are always happy to help.\
-****
+This is it. We hope you have been able to follow this tutorial end to end and made a successful trade. If you have any questions or are planning to write some utility software (e.g. signing logic in another language) please reach out to us on [Discord](https://discord.gg/cowswap), we are always happy to help.
 
 **Happy Trading!**\

@@ -2,7 +2,7 @@
 
 CoW Swap is the first trading interface built on top of CoW Protocol. It allows you to buy and sell tokens using gas-less orders that are settled p2p.
 
-#### Differences between CoW Swap & UniSwap
+#### Differences between CoW Swap & Uniswap
 
 CoW Swap's interface may look very familiar to the average DeFi user, as it's based on the Open Source code used for building the Uniswap front end. Although it looks similar, there are huge differences between the two products, which are:
 

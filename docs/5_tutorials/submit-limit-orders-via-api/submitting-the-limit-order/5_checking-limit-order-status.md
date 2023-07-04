@@ -1,6 +1,6 @@
 # 4. Checking Limit Order Status
 
-In order to follow if/when your order has been matched you can either subscribe to “Trade” events by the[ Settlement Contract](https://etherscan.io/address/0x3328f5f2cEcAF00a2443082B657CedEAf70bfAEf):
+In order to follow if/when your order has been matched you can either subscribe to “Trade” events by the [Settlement Contract](https://etherscan.io/address/0x3328f5f2cEcAF00a2443082B657CedEAf70bfAEf):
 
 ```typescript
 import GPv2SettlementArtefact from "@gnosis.pm/gp-v2-contracts/deployments/mainnet/GPv2Settlement.json";
@@ -39,14 +39,10 @@ https://api.cow.fi/mainnet/api/v1/trades?orderUid=0xc21b7756caf1f6df13e994776720
 ]
 ```
 
-If your order was partially fillable and traded in multiple chunks you may find one entry per trade.\
-
+If your order was partially fillable and traded in multiple chunks you may find one entry per trade.
 
 For convenience, you can also check the status of your order using the CoW Protocol API at [https://api.cow.fi/$network/api/v1/orders/$orderUid](https://api.cow.fi/$network/api/v1/orders/$orderUid). For example: [https://api.cow.fi/mainnet/api/v1/orders/0x1792f3fc1615117bef538ab7e830e4c882f9b51d27aadcc14dd10754bb6b5423baaea72417f4dc3e0f52a1783b0913d0f3516634632b58b1](https://api.cow.fi/mainnet/api/v1/orders/0x1792f3fc1615117bef538ab7e830e4c882f9b51d27aadcc14dd10754bb6b5423baaea72417f4dc3e0f52a1783b0913d0f3516634632b58b1)\
-
 
 This is it. We hope you have been able to follow this tutorial end to end and made a successful trade. If you have any questions or are planning to write some utility software (e.g. signing logic in another language) please reach out to us on[ Discord](https://discord.gg/cowswap), we are always happy to help.
 
 Happy Trading!
-
-\

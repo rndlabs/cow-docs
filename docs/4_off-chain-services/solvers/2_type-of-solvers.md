@@ -1,7 +1,5 @@
 # Solver Landscape
 
-
-
 There are currently multiple solvers competing to come up with the best order settlement solution matching for a given batch auction problem. They can be grouped in a 2x2 matrix:
 
 |                       | **Single order solver**               | **Batch order solver** |
@@ -82,7 +80,7 @@ The MIP solver matches a set of orders against a set of AMM's. This is the gener
 
 ![](/img/MIP Solver.png)
 
-At the moment, this solver only has access to Uni v2 style liquidity. More complex AMM's (e.g., Uni v3 style pools) cannot be easily modeled using linear constraints and are therefore not supported by this solver yet.
+At the moment, this solver only has access to Uni v2 style liquidity. More complex AMM's (e.g., Uni v3 style pools) cannot be easily modelled using linear constraints and are therefore not supported by this solver yet.
 
 **Addresses:**
 

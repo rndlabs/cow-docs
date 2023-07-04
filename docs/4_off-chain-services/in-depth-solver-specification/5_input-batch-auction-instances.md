@@ -12,7 +12,11 @@ For the purposes of this page, any instance of the word "fee" shall be taken to 
 
 The input batch is formatted in [JSON](https://www.json.org/json-en.html), described in the following sections.
 
-Note: To avoid precision loss, some numerical literals are encoded as strings, referred below as _stringified_.
+:::note
+
+To avoid precision loss, some numerical literals are encoded as strings, referred below as _stringified_.
+
+:::
 
 ## Tokens
 
@@ -22,8 +26,8 @@ The "tokens" key lists all tokens that appear in some order or AMM in the batch.
 * `"alias"`: a string denoting the shorthand name of the token (e.g., WETH, DAI)
 * `"external_price"`: a float that corresponds to the price of the smallest denomination of the token with respect to a reference token. Only tokens that are traded by at least a user order will necessarily have an external price.
 * `"normalize_priority"`: an integer that expresses the preference for the token to be used as the [numeraire](https://en.wikipedia.org/wiki/Num%C3%A9raire). The token with highest priority in the solution will have price set to 1. More on this later.
-* `"accepted_for_internalization"`: this is a boolean flag that specifies whether the contract is willing to store the token as part of an internalized interaction. More information about internalizations (what they are and when they are allowed) can be found in the next section (see [here](https://docs.cow.fi/off-chain-services/in-depth-solver-specification/output-batch-auction-solutions#using-internal-buffers)).
-* `"internal_buffer"`: a "stringified" integer that describes the amount (in the token's lowest denomination) of the token currently stored in the settlement contract. This information is relevant when a solver attempts to internalize an interaction (see [here](https://docs.cow.fi/off-chain-services/in-depth-solver-specification/output-batch-auction-solutions#using-internal-buffers)).
+* `"accepted_for_internalization"`: this is a boolean flag that specifies whether the contract is willing to store the token as part of an internalised interaction. More information about internalisations (what they are and when they are allowed) can be found in the next section (see [here](output-batch-auction-solutions#using-internal-buffers)).
+* `"internal_buffer"`: a "stringified" integer that describes the amount (in the token's lowest denomination) of the token currently stored in the settlement contract. This information is relevant when a solver attempts to internalise an interaction (see [here](output-batch-auction-solutions#using-internal-buffers)).
 
 Following are three example token entries, corresponding to [WETH](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), [BAL](https://etherscan.io/token/0xba100000625a3754423978a60c9317c58a424e3d) and [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48).
 
@@ -60,7 +64,7 @@ We clarify a few things regarding the entries above.
 * The external\_price of BAL is set to 0.005223351891153233, which means that 1/10¹⁸ of BAL has a price of 0.005223351891153233 wei.
 * Finally, the external\_price of USDC is set to 214765397.01856124, which means that 1/10⁶ of USDC has a price of 214765397.01856124 wei. Note that this translates to 1 USDC having a price of 214765397.01856124 · 10⁶ / 10¹⁸ WETH, which gives that 1 USDC costs roughly 0.000214765397 WETH.
 
-Note that all three tokens above are accepted for internalization. An example of a token not accepted for internalization is the following:\
+Note that all three tokens above are accepted for internalisation. An example of a token not accepted for internalisation is the following:\
 
 
 ```json
@@ -137,7 +141,7 @@ A Constant Product pool describes [Uniswap v2 liquidity pools](https://docs.unis
 * `"kind"`: the type is set to “ConstantProduct”.
 * `"reserves"`: a dictionary describing the reserves of the two tokens of the liquidity pool. More specifically, it maps each token id's of the AMM's tradeable tokens to the corresponding stringified integer amounts contained in each of the pools.
 * `"fee"`: a stringified decimal number denoting the percent of the amount traded in the liquidity pool that must be paid for using it. For example, if we transfer an amount $$y$$ to the pool, then the amount blocked and used as a fee is equal to $$\mathrm{fee} \cdot y$$.
-* `"cost"`: this entry is identical to the cost entry of an order (see above), and again is only meant to be used as an indicator of the cost. If the AMM is used, the total execution cost is computed via simulation (as described [here](https://docs.cow.fi/off-chain-services/in-depth-solver-specification/the-batch-auction-optimization-problem#ranking-of-solutions)).
+* `"cost"`: this entry is identical to the cost entry of an order (see above), and again is only meant to be used as an indicator of the cost. If the AMM is used, the total execution cost is computed via simulation (as described [here](the-batch-auction-optimisation-problem#ranking-of-solutions)).
 
 We now give an example entry of such an AMM, corresponding to a pool of [BAL](https://etherscan.io/address/0xba100000625a3754423978a60c9317c58a424e3d) and [WETH](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2). We again clarify that the amounts in the entry are with respect to the smallest denomination of each token.
 

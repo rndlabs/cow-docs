@@ -20,9 +20,9 @@ const orderSigningUtils = new OrderSigningUtils()
 
 The SDK will expose:
 
-- `OrderBookApi` - provides the ability to retrieve orders and trades from the CowSap order-book, as well as add and cancel them
+- `OrderBookApi` - provides the ability to retrieve orders and trades from the Cow Protocol OrderBook, as well as add and cancel them
 - `OrderSigningUtils` - serves to sign orders and cancel them using [EIP-712](https://eips.ethereum.org/EIPS/eip-712)
-- `SubgraphApi` - provides statistics data about CoW protocol from [Subgraph](https://github.com/cowprotocol/subgraph), such as trading volume, trades count and others
+- `SubgraphApi` - provides statistics data about CoW Protocol from [Subgraph](https://github.com/cowprotocol/subgraph), such as trading volume, trades count and others
 
 > 💡 For a quick snippet with the full process on posting an order see the [Quick start example](https://github.com/cowprotocol/cow-sdk/blob/main/examples/cra/src/pages/quickStart/index.tsx)
 

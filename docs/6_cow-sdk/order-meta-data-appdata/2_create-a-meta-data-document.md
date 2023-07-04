@@ -1,10 +1,10 @@
-# Create a meta-data document
+# Create a metadata document
 
 Orders in CoW Protocol can contain arbitrary data in a field called `AppData`.
 
-The SDK facilitates the creation of these documents, and getting the `AppData` Hex number that summarizes it.
+The SDK facilitates the creation of these documents, and getting the `AppData` Hex number that summarises it.
 
-The most important thing to define in the meta-data is the name of your app, so the order-flow can be credited to it.
+The most important thing to define in the metadata is the name of your app, so the order-flow can be credited to it.
 
 ```typescript
 import { MetadataApi } from '@cowprotocol/app-data'
@@ -30,9 +30,9 @@ This will create a document similar to:
 } 
 ```
 
-After creating the most basic document, you can see how to attach additional meta-data items.
+After creating the most basic document, you can see how to attach additional metadata items.
 
-For example, you could give information about who reffered the user creating the order.
+For example, you could give information about who referred the user creating the order.
 
 {% code title="" %}
 ```typescript
@@ -68,6 +68,6 @@ This will create a document similar to:
 }
 ```
 
-For a complete list of meta-data that can be attach check [@cowprotocol/app-data](https://github.com/cowprotocol/app-data)
+For a complete list of metadata that can be attach check [@cowprotocol/app-data](https://github.com/cowprotocol/app-data)
 
-Know that you know how to create meta-data documents, let's review how to get the `appData` that we need when we post orders. Just a hint, this `appData` is deterministic based on the content of the meta-data document.
+Now that you know how to create metadata documents, let's review how to get the `appData` that we need when we post orders. Just a hint, this `appData` is deterministic based on the content of the metadata document.

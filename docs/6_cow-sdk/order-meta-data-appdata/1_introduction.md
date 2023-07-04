@@ -1,6 +1,6 @@
-# Order meta-data (AppData)
+# Order metadata (AppData)
 
-The protocol have some means to attach arbitrary information to any order. This data will be available by using only on-chain data and IPFS.
+The protocol has some means to attach arbitrary information to any order. This data will be available by using only on-chain data and IPFS.
 
 Orders have some special data field called `appData`. This is a hex number that directly points to an IPFS document. This IPFS document is a JSON data file with all this arbitrary information.
 
@@ -13,4 +13,4 @@ Some questions that we could ask ourselves is:
 
 For all these questions, SDK is the answer 😎
 
-Let's start by creating a basic meta-data document that includes the name of your app, so you can track all the volume you bring to the protocol.
+Let's start by creating a basic metadata document that includes the name of your app, so you can track all the volume you bring to the protocol.

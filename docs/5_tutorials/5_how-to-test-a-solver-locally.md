@@ -12,16 +12,18 @@ Once we are done with the installation, we turn to the Driver setup.
 
 ### Driver setup
 
-Reading the state of the blockchain requires issuing RPC calls to an Ethereum node. The simplest way to do so is by using a third party service like [Infura](https://infura.io/) to get access to an Ethereum node; thus, in this tutorial we use Infura. After registering for a free Infura account, Infura offers "endpoints" for the Mainnet and different testnets. We will refer to those as node-urls. Since the CoW Protocol only runs on Mainnet, Rinkeby and GnosisChain, we need to select one of those.
+Reading the state of the blockchain requires issuing RPC calls to an Ethereum node. The simplest way to do so is by using a third party service like [Infura](https://infura.io/) to get access to an Ethereum node; thus, in this tutorial we use Infura. After registering for a free Infura account, Infura offers "endpoints" for the Mainnet and different testnets. We will refer to those as node-urls. Since the CoW Protocol only runs on Mainnet, Goerli and Gnosis Chain, we need to select one of those.
 
-In order to start the Driver, we can execute the following command in a terminal:\
-\
-`cargo run -p solver -- --orderbook-url` [`https://api.cow.fi/mainnet`](https://api.cow.fi/mainnet)``\
-`--node-url "https://mainnet.infura.io/v3/<INFURA_KEY>"`\
-`--cow-dex-ag-solver-url "http://127.0.0.1:8000"`\
-`--solver-account 0xa6DDBD0dE6B310819b49f680F65871beE85f517e`\
-`--solvers CowDexAg`\
-`--transaction-strategy DryRun`
+In order to start the Driver, we can execute the following command in a terminal:
+
+```bash
+cargo run -p solver -- --orderbook-url https://api.cow.fi/mainnet \
+    --node-url "https://mainnet.infura.io/v3/<INFURA_KEY>" \
+    --cow-dex-ag-solver-url "http://127.0.0.1:8000" \
+    --solver-account 0xa6DDBD0dE6B310819b49f680F65871beE85f517e \
+    --solvers CowDexAg \
+    --transaction-strategy DryRun
+```
 
 where the `INFURA_KEY` entry should be replaced with the key associated with our Infura account.
 
@@ -37,5 +39,4 @@ An example of a publicly available solver, namely the Dex Cow Solver, can be fou
 
 You can follow the simple instructions of the Dex Cow Solver to locally deploy that particular solver.
 
-For potential questions/issues regarding the testing of solvers, we also encourage everyone to contact our team in the CoW Swap Discord: [https://discord.com/invite/cowprotocol](https://discord.com/invite/cowprotocol)\
-\
+For potential questions/issues regarding the testing of solvers, we also encourage everyone to contact our team in the CoW Protocol Discord: [https://discord.com/invite/cowprotocol](https://discord.com/invite/cowprotocol)\

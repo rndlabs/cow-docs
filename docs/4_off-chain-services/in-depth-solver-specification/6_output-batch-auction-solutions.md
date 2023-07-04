@@ -50,7 +50,7 @@ The "orders" key contains all orders that were selected for execution, and it is
 
 ## Foreign Liquidity orders
 
-In order to allow solvers to build solutions that use additional liquidity orders, besides the ones contained in the input json, there is a `foreign_liquidity_orders` key that maps to a list of "orders", where each entry describes the liquidity order as well as the executed buy and sell amounts. This is a required field. An example entry is given below.
+In order to allow solvers to build solutions that use additional liquidity orders, besides the ones contained in the input JSON, there is a `foreign_liquidity_orders` key that maps to a list of "orders", where each entry describes the liquidity order as well as the executed buy and sell amounts. This is a required field. An example entry is given below.
 
 {% code overflow="wrap" %}
 ```json
@@ -79,7 +79,7 @@ In order to allow solvers to build solutions that use additional liquidity order
 
 We now clarify the meaning of some of the entries above:
 
-* `"appData"`: this is a free 32-byte slot that does not, in any way, affect on-chain settlement. This might be utilized in the future to allow for additional functionality.
+* `"appData"`: this is a free 32-byte slot that does not, in any way, affect on-chain settlement. This might be utilised in the future to allow for additional functionality.
 * `"signingScheme"` and `"signature"`: These two entries contain the relevant information for signing orders; the scheme used and the signature itself. Some more information about signing orders can be found [here](https://docs.cow.fi/tutorials/how-to-submit-orders-via-the-api/4.-signing-the-order).
 
 As a final comment, and similar to the liquidity orders provided by the Driver, foreign liquidity orders are always matched at limit price and do not contribute surplus to the objective function. Moreover, a solution containing only (foreign) liquidity orders is not considered valid.
@@ -129,17 +129,18 @@ An example of a Constant Product AMM execution entry is given below.
 
 ### **Using internal buffers**
 
-We now discuss some additional functionality that solvers are allowed to use. Since the settlement contract holds balances of multiple tokens, solvers are in certain cases allowed to "internalize" an AMM interaction, in order to save on gas. More precisely, if there is an AMM interaction that buys token A and sells token B, a solver can decide to internalize the interaction if and only if the following two conditions are satisfied:\
-\
-1\. Token A is a safe token, i.e., the corresponding `"accepted_for_internalization"` flag is set to `true`. This means that the protocol is happy to store this token in the settlement contract.
+We now discuss some additional functionality that solvers are allowed to use. Since the settlement contract holds balances of multiple tokens, solvers are in certain cases allowed to "internalise" an AMM interaction, in order to save on gas. More precisely, if there is an AMM interaction that buys token A and sells token B, a solver can decide to internalise the interaction if and only if the following two conditions are satisfied:
 
-2\. There is enough balance of sell token B, i.e., at least as much amount as the sell amount of the AMM interaction. This is revealed by the `"internal_buffer"` entry in the token description.
+1. Token A is a safe token, i.e., the corresponding `accepted_for_internalization` flag is set to `true`. This means that the protocol is happy to store this token in the settlement contract.
+2. There is enough balance of sell token B, i.e., at least as much amount as the sell amount of the AMM interaction. This is revealed by the `internal_buffer` entry in the token description.
 
-If both conditions are satisfied, a solver can set the `"internal"` flag to `true` in order to internalize the interaction:\
-\
-`"internal": true`
+If both conditions are satisfied, a solver can set the `internal` flag to `true` in order to internalise the interaction:
 
-In such a case, the driver will remove the interaction, and so the solution will end up using less gas, get better ranking, and also be risk-free (at least the part involving the internalized AMM interaction). We stress that the `exec_plan` coordinates must always be provided, even if the interaction will end up being internalized.
+```json
+"internal": true
+```
+
+In such a case, the driver will remove the interaction, and so the solution will end up using less gas, get better ranking, and also be risk-free (at least the part involving the internalised AMM interaction). We stress that the `exec_plan` coordinates must always be provided, even if the interaction will end up being internalised.
 
 ## Prices of the traded tokens
 
@@ -167,9 +168,9 @@ In order to allow solvers to propose solutions that interact with contracts/pool
 
 The "approvals" key is a list where each entry consists of the following:
 
-* `"spender"`: the address of the target contract that we authorize to trade some token on the settlement contract's behalf.
-* `"token"`: the address of the token that we authorize.
-* `"amount"`: a stringified integer that corresponds to the (minimum) amount we authorize the target contract to use. **We stress here** that currently the behavior is the following. If there is already sufficiently large (i.e., larger than the `"amount"` entry) allowance set by a previous settlement, then the approval is ignored altogether. On the other hand, if the current allowance is lower than `"amount"`, then the driver will set a maximum value for the approval (much larger than the actual `"amount"` specified by the entry); this allows for future gas savings.\
+* `"spender"`: the address of the target contract that we authorise to trade some token on the settlement contract's behalf.
+* `"token"`: the address of the token that we authorise.
+* `"amount"`: a stringified integer that corresponds to the (minimum) amount we authorise the target contract to use. **We stress here** that currently the behaviour is the following. If there is already sufficiently large (i.e., larger than the `"amount"` entry) allowance set by a previous settlement, then the approval is ignored altogether. On the other hand, if the current allowance is lower than `"amount"`, then the driver will set a maximum value for the approval (much larger than the actual `"amount"` specified by the entry); this allows for future gas savings.\
   \
   In case full control over approvals is required, a solver can skip this field and instead use a custom [interaction](#interaction-data) to set an exact approval.
 

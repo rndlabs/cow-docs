@@ -1,4 +1,4 @@
-# MetaData
+# Metadata
 
 The metadata document is a JSON file that follows a specific format.
 
@@ -31,11 +31,11 @@ Interfaces like CoW Swap could, by default, include the hash of the following do
 }
 ```
 
-**Is it possible to include two Metadatas of the same kind in the same document?**
+**Is it possible to include two metadata of the same kind in the same document?**
 
 No. Only one kind instance per document. If a kind can have a higher cardinality, its schema should take this into account and should model this cardinality within it's schema definition. This way, when processing this information, we ignore the second occurrences for the same kind.
 
-**Referral: Example of a Metadata Kind**
+**Referral: Example of a metadata kind**
 
 Just for illustrative purposes, let's see how a referral metadata could look like.
 

@@ -2,7 +2,7 @@
 
 The first step is approving the tokens you want to sell to the **GPv2VaultRelayer**.
 
-The safe that I am using had `yvUSDC`, `yvYFI` and `yvLINK`, so my first tx takes care of withdrawing and approving each token. Code is the following:
+The safe that I am using had `yvUSDC`, `yvYFI` and `yvLINK`, so my first TX takes care of withdrawing and approving each token. Code is the following:
 
 ```python
 import click
@@ -42,6 +42,6 @@ def withdraw_and_approve_tokens_sep_21():
     safe.post_transaction(safe_tx)
 ```
 
-After testing in a fork, ape-safe will ask for your account password and submit the tx to the multisign.
+After testing in a fork, `ape-safe` will ask for your account password and submit the TX to the multisig.
 
-After the tx is executed, we would have our vanilla erc-20 tokens plus all approvals needed to submit an order.
+After the TX is executed, we would have our vanilla ERC20 tokens plus all approvals needed to submit an order.

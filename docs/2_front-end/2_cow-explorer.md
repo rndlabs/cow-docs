@@ -21,7 +21,7 @@ CoW Protocol Explorer is an "Etherscan" like interface for the CoW Protocol. Giv
 
 #### States
 
-As CPE is meant to help users visualize meta transactions (signed orders), a critical parameter to show is the State of the signed order. This parameter has the following status:
+As CPE is meant to help users visualise meta transactions (signed orders), a critical parameter to show is the State of the signed order. This parameter has the following status:
 
 * **Open** (pending)**:** State for a standing order. Orders in this state are being considered by the solvers. It is the entry state for all orders, the default from the moment the order is placed. From here the order can transition to all other states
 * **Filled:** State for an executed/settled order. Orders in this state have been executed and the corresponding funds transferred to the target account. Orders in this state will have available a link to the corresponding Etherscan settlement transaction. This settlement transaction would contain your order's execution and any other orders that are part of the same batch.

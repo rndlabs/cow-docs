@@ -4,7 +4,7 @@ Order creation is happening via a POST request to the following endpoint:
 
 https://api.cow.fi/mainnet/api/v1/orders
 
-The payload needs to be a json encoded object. Our example order would look like this:
+The payload needs to be a JSON encoded object. Our example order would look like this:
 
 ```typescript
 {
@@ -34,4 +34,4 @@ The trader address is automatically derived from the signature and thus also opt
 
 By default, funds will be taken from your account via the Vault Relayer and proceeds will be sent to your receiving account. For the sell token balance, you can also choose to use your existing Balancer v2 vault's allowance ("external") or internal Balancer v2 balance ("internal"). In this case you don't need to set the VaultRelayer approval from step 1. The buy token can also be transferred into your internal Balancer v2 Vault balance by specifying "buyTokenBalance": "internal".
 
-In case of success, the API should return the order UID, which you can use to track the status of your order either in the[ Cow Explorer](https://explorer.cow.fi), or the API
+In case of success, the API should return the order UID, which you can use to track the status of your order either in the [Cow Explorer](https://explorer.cow.fi), or the API

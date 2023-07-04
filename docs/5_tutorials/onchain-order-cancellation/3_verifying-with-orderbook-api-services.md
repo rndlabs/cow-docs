@@ -1,7 +1,5 @@
 # Verifying with Orderbook API Services
 
-
-
 * To check that the invalidation was picked up by our orderbook via the [API service](https://api.cow.fi/mainnet)
 * In the Orderbook API, select the appropriate network from the servers dropdown at the top of the page (for this tutorial we have selected our local instance)
 

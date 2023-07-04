@@ -28,4 +28,4 @@ const decodedAppDataHex = await metadataApi.appDataHexToCid(hash)
 
 This will return an IPFS CIDv0: `QmUf2TrpSANVXdgcYfAAACe6kg551cY3rAemB7xfEMjYvs`
 
-🎉Congrats! you've learned how meta-data in orders work.
+🎉Congrats! you've learned how metadata in orders work.

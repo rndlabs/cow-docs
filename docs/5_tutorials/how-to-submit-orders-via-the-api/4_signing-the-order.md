@@ -2,7 +2,7 @@
 
 We will resume the example from above, setting the validity (Unix timestamp) to [August 4th 2021](https://www.epochconverter.com/?q=1628035200). We use `keccak(GPv2 Place Order Tutorial)` as appData (you can use your individual 32 bytes to identify the “source” of your orders).
 
-Our typescript library provides a convenient way to create valid signatures for your order.
+Our TypeScript library provides a convenient way to create valid signatures for your order.
 
 ```typescript
 import {

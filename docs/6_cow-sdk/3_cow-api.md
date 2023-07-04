@@ -1,13 +1,13 @@
-# CoW API
+# CoW Protocol API
 
-The SDK provides access to the CoW API. The CoW API allows you:
+The SDK provides access to the CoW Protocol API. The CoW Protocol API allows you:
 
 * Post orders
 * Get [protocol fee](../overview/definitions) quotes
 * Get order details
 * Get history of orders: i.e. filtering by account, transaction hash, etc.
 
-For example, you can easily get the last 5 order of a trader:
+For example, you can easily get the last 5 orders of a trader:
 
 ```typescript
 import { OrderBookApi, SupportedChainId } from '@cowprotocol/cow-sdk'
@@ -25,4 +25,4 @@ console.log(trades)
 
 > 💡 For more information about the API methods, you can check [api.cow.fi/docs](https://api.cow.fi/docs).
 
-Now you should be able to access the main API methods. Let's continue in next section on how to sign and post new orders.\\
+Now you should be able to access the main API methods. Let's continue in next section on how to sign and post new orders.

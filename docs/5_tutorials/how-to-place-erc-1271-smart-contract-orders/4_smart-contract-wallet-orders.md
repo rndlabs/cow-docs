@@ -6,7 +6,7 @@ The spirit of ERC-1271 support in CoW Protocol was to enable Smart Contract wall
 * Wallet accepts all signatures from a specific domain
 * Owner off-chain signatures that are verified by the Smart Contract wallet
 
-Specifically, the Safe v1.3 uses the latter for verifying signatures. Because the Safe uses off-chain owner ECDSA signatures for signature verification, this means that it is possible to trade "gas-less-ly" on CoW Protocol with the Safe.
+Specifically, the Safe v1.3 uses the latter for verifying signatures. Because the Safe uses off-chain owner ECDSA signatures for signature verification, this means that it is possible to trade gas-less on CoW Protocol with the Safe.
 
 ### Safe
 

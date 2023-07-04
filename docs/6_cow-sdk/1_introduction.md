@@ -8,9 +8,9 @@ description: >-
 
 Unlock an endless world of possibilities via **CoW Protocol SDK** ([@cowprotocol/cow-sdk](https://www.npmjs.com/package/@cowprotocol/cow-sdk) in NPM)
 
-### First, lets introduce CoW Swap and CoW Protocol <a href="#get-started" id="get-started"></a>
+### First, lets introduce CoW Swap and CoW Protocol
 
-CoW Swap is a Decentralized Application (DApp) and Protocol allowing users to **exchange digital assets directly (peer-to-peer) and via existing trading decentralised exchanges**.
+CoW Swap is a Decentralised Application (dapp) and Protocol allowing users to **exchange digital assets directly (peer-to-peer) and via existing trading decentralised exchanges**.
 
 Its novel design maximises trade efficiency and provides a competitive way to ensure best prices.
 
@@ -18,15 +18,14 @@ One of the core ideas is executing **trades in batches**, where users will trade
 
 In consequence CoW Swap **protects users from front-running and other value extraction (known as MEV)**. The mechanism also leverages the concept of “ring trades” to boost liquidity in highly fragmented and long-tail token markets.
 
-Additionally, CoW Swap allows for an improved user experience by facilitating gasless trades, not paying for failed transactions and adaptive routing in case of volatility.
+Additionally, CoW Swap allows for an improved user experience by facilitating gas-less trades, not paying for failed transactions and adaptive routing in case of volatility.
 
-#### Get familiar with CoW Swap <a href="#get-familiar-with-cowswap" id="get-familiar-with-cowswap"></a>
+#### Get familiar with CoW Swap
 
-CoW Swap uses CoW protocol. One easy way to get familiar with the protocol is by doing one trade in CoW Swap:
+CoW Swap uses CoW Protocol. One easy way to get familiar with the protocol is by doing one trade in CoW Swap:
 
 * [https://swap.cow.fi](https://swap.cow.fi/)
 
-You can use it in **Goerli** test net if you want. Otherwise, it is avaiable in **Mainnet** and **Gnosis Chain**.  
-
+You can use it in **Goerli** test net if you want. Otherwise, it is available in **Mainnet** and **Gnosis Chain**.
 
 Now you are more familiar with the protocol and CoW Swap, let's introduce the SDK in the next section.

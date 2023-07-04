@@ -10,13 +10,13 @@ To start, suppose that we have a solution that consists of a single trading cycl
 
 $$p(C) \coloneqq \prod_{o_i \in C} p(o_i) = p(o_1) \cdot p(o_2) \cdot \ldots \cdot p(o_k)= 1.$$
 
-Inspired by the above equation that holds for a single cycle, we now generalize this in the case where a user trade is part of many trading cycles in the proposed solution. More specifically, we denote by $$\mathcal{C}(o)$$  the set of all trading cycles containing the order _o_ in a candidate solution. We require that:
+Inspired by the above equation that holds for a single cycle, we now generalise this in the case where a user trade is part of many trading cycles in the proposed solution. More specifically, we denote by $$\mathcal{C}(o)$$  the set of all trading cycles containing the order _o_ in a candidate solution. We require that:
 
 $$\sum_{C \in \mathcal{C}(o)} \lambda_C \cdot p(C) = 1,$$
 
 where $$\lambda_C \geq 0$$ is a non-negative number that is well-defined for each cycle _C_, such that $$\sum_{C \in \mathcal{C}(o)} \lambda_C= 1$$. The above condition can be viewed as an average-case version of the simpler equation that holds for a single cycle and is described above.
 
-The only thing remaining to do is define the weights $$\lambda_C$$ which intuitively should capture the extent to which a given trade is utilized in different trading cycles. To do so, we first define the execution graph _G_(_o_) of a user trade _o_ as the union of all cycles containing the trade _o_, where we use the following convention: we have a node for each of the traded tokens, and for each order $$o$$ that buys token _u_ and sells token _v,_ we add a directed edge (_u, v_) from _u_ to _v_. Thus, we end up with a directed graph _G_(_o_). To simplify things, we remove the edge corresponding to trade _o_ from the graph and call this updated graph the execution graph _G_(_o_) of trade _o._ \
+The only thing remaining to do is define the weights $$\lambda_C$$ which intuitively should capture the extent to which a given trade is utilised in different trading cycles. To do so, we first define the execution graph _G_(_o_) of a user trade _o_ as the union of all cycles containing the trade _o_, where we use the following convention: we have a node for each of the traded tokens, and for each order $$o$$ that buys token _u_ and sells token _v,_ we add a directed edge (_u, v_) from _u_ to _v_. Thus, we end up with a directed graph _G_(_o_). To simplify things, we remove the edge corresponding to trade _o_ from the graph and call this updated graph the execution graph _G_(_o_) of trade _o._ \
 \
 **Claim**: It is easy to see that this graph is directed and acyclic ([DAG](https://en.wikipedia.org/wiki/Directed\_acyclic\_graph)).\
 \
@@ -34,7 +34,7 @@ $$\lambda_C \coloneqq \prod_{\alpha \in C} \lambda_\alpha,$$
 
 for every cycle containing order _o._ It is now straightforward to prove that these terms now indeed sum up to 1.
 
-To summarize, for a proposed solution, we require that for each executed user order _o_, we must have
+To summarise, for a proposed solution, we require that for each executed user order _o_, we must have
 
 $$\sum_{C \in \mathcal{C}(o)} \lambda_C \cdot r(C) = 1,$$
 

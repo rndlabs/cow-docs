@@ -1,10 +1,10 @@
 # Querying the Cow Subgraph
 
-The [Subgraph](https://github.com/cowprotocol/subgraph) is constantly indexing the protocol, making all the information more accessible. It provides information about trades, users, tokens and settlements. Additionally, it has some data aggregations which provides insights on the hourly/daily/totals USD volumes, trades, users, etc.
+The [subgraph](https://github.com/cowprotocol/subgraph) is constantly indexing the protocol, making all the information more accessible. It provides information about trades, users, tokens and settlements. Additionally, it has some data aggregations which provides insights on the hourly/daily/totals USD volumes, trades, users, etc.
 
 The SDK provides just an easy way to access all this information.
 
-You can query the Cow Subgraph either by running some common queries exposed by the `CowSubgraphApi` or by building your own ones:
+You can query the CoW Protocol subgraph either by running some common queries exposed by `CowSubgraphApi` or by building your own ones:
 
 ```typescript
 import { SubgraphApi, SupportedChainId } from '@cowprotocol/cow-sdk'

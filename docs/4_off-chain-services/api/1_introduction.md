@@ -1,6 +1,6 @@
 # API
 
-Directly interact with the CoW protocol to place, manage and settle your orders through a documented API interface.
+Directly interact with the CoW Protocol to place, manage and settle your orders through a documented API interface.
 
 See [API Docs (Swagger)](https://api.cow.fi/docs) for more details.
 

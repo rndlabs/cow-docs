@@ -4,7 +4,7 @@ Order creation is happening via a POST request to the following endpoint:
 
 **https://api.cow.fi/mainnet/api/v1/orders**
 
-The payload needs to be a json encoded object. Our example order would look like this:
+The payload needs to be a JSON encoded object. Our example order would look like this:
 
 ```typescript
 {

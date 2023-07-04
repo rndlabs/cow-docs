@@ -1,8 +1,8 @@
 # The Basics of ERC-1271
 
-While this works for EOAs, which have private keys, it does not work for Smart Contracts, and specifically Smart Contract Wallets. This is because Smart Contracts have no "private keys", to use for elliptic curve cryptography. Meaning, that Smart Contracts really be used for ECDSA signing. In order to work around this, a different signature is needed that does not depend on elliptic curve cryptography.
+While this works for EOAs, which have private keys, it does not work for Smart Contracts, and specifically Smart Contract Wallets. This is because Smart Contracts have no "private keys", to use for elliptic curve cryptography. Meaning, that Smart Contracts cannot be used for ECDSA signing. In order to work around this, a different signature is needed that does not depend on elliptic curve cryptography.
 
-The solution was to standardise a new form of on-chain signature verification for Smart Contracts: [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271). This is a simple standard that requires Smart Contracts that want to perform signature verification to implement a `isValidSignature` method:
+The solution was to standardise a new form of on-chain signature verification for Smart Contracts: [ERC-1271](https://eips.ethereum.org/EIPS/eip-1271). This is a simple standard that requires Smart Contracts that want to perform signature verification to implement an `isValidSignature` method:
 
 ![](https://lh4.googleusercontent.com/jyTXFIF5mfZG8pZOIXx_4CKvi9XMrq39uR3RXgu_dLccgVVxfY43WgO2sJlJZe9JRn5V53Zfj857WmdBfef7shmtsNB86ui0goIPLCPvZlDKPUeHass7f7DOhBJlz3pc4dX6N7oxpvOm98DPGAPdGKUUQezQ-fD5tMf-ZzoU2C71pAiab_6xQymi2rIy)
 

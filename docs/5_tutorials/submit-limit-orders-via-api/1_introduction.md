@@ -10,5 +10,5 @@ In case you would like to submit orders programmatically instead of via a UI, th
 2. Submitting on-chain orders without API interactions
 3. Other more automated trading strategies
 
-The general API documentation can be found here:[ https://api.cow.fi/docs](https://api.cow.fi/docs). We have also written a small[ trading bot script](https://github.com/gnosis/gp-v2-trading-bot).
+The general API documentation can be found here: [https://api.cow.fi/docs](https://api.cow.fi/docs). We have also written a small[trading bot script](https://github.com/gnosis/gp-v2-trading-bot).
 

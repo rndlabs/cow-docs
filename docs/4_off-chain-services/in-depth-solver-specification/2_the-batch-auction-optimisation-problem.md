@@ -6,7 +6,7 @@ For the purposes of this page, any instance of the word "fee" shall be taken to 
 
 :::
 
-In this section, we describe all the different components of the optimization problem that needs to be solved within each batch.
+In this section, we describe all the different components of the optimisation problem that needs to be solved within each batch.
 
 ## User Orders
 
@@ -60,7 +60,7 @@ Liquidity orders are orders not submitted by users. They represent sources of li
 
 Each user order has an associated fee paid to the protocol. At a high level, these fees can be represented by a function that, for a given order $$S$$ maps all possible trades to a positive vector of tokens, that is $$f_S:S \rightarrow \mathbb R^k_+$$   with $$f_S(0)=0$$.
 
-From the practical viewpoint, for market fill-or-kill orders, the fee is always in the sell token and is pre-specified: it is an estimate of the cost of executing an order and is explicitly shown to the user before the order is submitted. Instead, (long-standing) limit orders are "feeless" from the user's perspective: users are guaranteed a limit price without specifying how fees will be calculated. For fill-or-kill limit orders, the protocol computes a fee each time such an order enters a batch auction, while for partially-fillable limit orders, solvers are the ones that need to propose a fee. In this latter case, the expectation is that this fee should equal the cost of execution of this trade in isolation. The fee of limit orders is again in the sell token.
+From the practical viewpoint, for market fill-or-kill orders, the fee is always in the sell token and is pre-specified: it is an estimate of the cost of executing an order and is explicitly shown to the user before the order is submitted. Instead, (long-standing) limit orders are "fee-less" from the user's perspective: users are guaranteed a limit price without specifying how fees will be calculated. For fill-or-kill limit orders, the protocol computes a fee each time such an order enters a batch auction, while for partially-fillable limit orders, solvers are the ones that need to propose a fee. In this latter case, the expectation is that this fee should equal the cost of execution of this trade in isolation. The fee of limit orders is again in the sell token.
 
 ## Solution
 
@@ -68,14 +68,14 @@ Solvers propose solutions to the protocol, where a solution is a set of trades t
 
 * **Maximum size of solution:** The total number of executed orders and AMMs does not exceed a certain number within each batch due to limitations regarding the size of a block on the blockchain.
 * **Incentive compatibility and feasibility:** the trades respect the user and liquidity orders, that is, $$o_i\in S_i~~\forall i\leq I$$  and $$l_j \in L_j~~\forall j\leq J$$.
-* **Uniform clearing prices:** all users must face the same prices. Importantly, this constraint is defined at the moment when the swap occurs. So, for example, suppose user _i_ receives _x_ units of token 1 in exchange of _y_ units of token 2 and that the protocol takes a fee in the sell token $$f_2$$. Define $$p_{1,2}=\frac{y-f_2}{x}$$ as the price at which the swap occurs. Uniform clearing prices means that $$p_{1,2}$$ is the same for all users swapping token 1 and token 2. Furthermore, prices must be consistent, in the sense that for any three tokens 1, 2, and 3, if $$p_{1,2},~ p_{2,3}, ~p_{1,3}$$ are well defined, then it must be that $$p_{1,2}\cdot p_{2,3}=p_{1,3}$$. Note that this implies that prices can be expressed with respect to a common numeraire, giving rise to a uniform price clearlng vector $$p$$.
+* **Uniform clearing prices:** all users must face the same prices. Importantly, this constraint is defined at the moment when the swap occurs. So, for example, suppose user _i_ receives _x_ units of token 1 in exchange of _y_ units of token 2 and that the protocol takes a fee in the sell token $$f_2$$. Define $$p_{1,2}=\frac{y-f_2}{x}$$ as the price at which the swap occurs. Uniform clearing prices means that $$p_{1,2}$$ is the same for all users swapping token 1 and token 2. Furthermore, prices must be consistent, in the sense that for any three tokens 1, 2, and 3, if $$p_{1,2},~ p_{2,3}, ~p_{1,3}$$ are well defined, then it must be that $$p_{1,2}\cdot p_{2,3}=p_{1,3}$$. Note that this implies that prices can be expressed with respect to a common numeraire, giving rise to a uniform price clearing vector $$p$$.
 * **Token conservation per token:** No token amounts can be created or destroyed. In other words, for every token, the total amount sold must be equal to the total amount bought of this token.
 * **Token conservation per order**: This is a very technical constraint that was part of CIP-11. More information about it can be found [here](appendix-token-conservation-per-order-aka-local-token-conservation).
 * **Social consensus rules:** These are a set of principles that solvers should follow, as voted in[ CIP-11](https://snapshot.org/#/cow.eth/proposal/0x16d8c681d52b24f1ccd854084e07a99fce6a7af1e25fd21ddae6534b411df870). For example:
   * _No provision of unfair solutions._ Uniform clearing prices computed by solvers should be in line (or even better) than what the users would get elsewhere. This becomes particularly relevant for solutions where CoWs happen, i.e., when some volume is settled as part of a CoW and not by routing through an AMM.
-  * _No malicious behavior_ such as intentionally harming users and/or the protocol.
+  * _No malicious behaviour_ such as intentionally harming users and/or the protocol.
 
-Note that systematic violation of these rules might lead to penalizing or even slashing (if the DAO decides so).
+Note that systematic violation of these rules might lead to penalising or even slashing (if the DAO decides so).
 
 From the protocol viewpoint, each solution that satisfies the above constraints has a _quality_ given by the sum of the utility generated and the fees paid to the protocol:
 

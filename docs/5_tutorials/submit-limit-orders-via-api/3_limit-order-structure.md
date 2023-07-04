@@ -24,4 +24,4 @@ description: >-
   * `eip1271`: Use ERC-1271 signature for the order. The order hash will be the EIP-712 order “struct hash” (defined above)
   * `presign`: Execute a transaction to the Settlement contract to indicate that an order is signed. This can be use as a fallback solution if no other signing schemes are supported by the trader.
 * **Signature:** The signature bytes. For ECDSA signatures (`eip712` and `ethsign`) this just the the signature encoded as 65 bytes: `r || s || v`. For `eip1271`, this is the signature bytes to pass in at signature verification. This is ERC-1271 implementation defined and largely depends on the signing smart contract. For `presign`, this is the empty bytes `0x`.
-* **From:** The Address that submits the order and authorizes the full sellAmount to be traded once executed.
+* **From:** The Address that submits the order and authorises the full sellAmount to be traded once executed.

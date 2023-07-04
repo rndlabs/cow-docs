@@ -12,7 +12,7 @@ The protocol supports four different signing methods:
 
 **4. Pre-signing the order with an onchain transaction from the owner of the order.**
 
-Except for pre-authorization, all signing schemes involve signing an _order digest_ that is based on the message structure of EIP-712.
+Except for pre-authorisation, all signing schemes involve signing an _order digest_ that is based on the message structure of EIP-712.
 
 The next section describes how to build the order digest, while the following sections describe each of the four signing schemes in detail.
 
@@ -139,4 +139,4 @@ In order for a signature to be valid, the user must have pre-approved the order 
 
 To do that, the trader must be the sender of an on-chain call to the settlement-contract function `setPreSignature` on input the order uid of the order that needs to be signed. See here for information on how to compute the order uid.
 
-Note that if an order was already filled, then presigning it does _not_ make it tradable again.
+Note that if an order was already filled, then pre-signing it does _not_ make it tradable again.

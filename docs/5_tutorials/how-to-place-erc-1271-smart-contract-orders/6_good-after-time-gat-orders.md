@@ -32,7 +32,7 @@ After this `place` transaction is executed, the order is ready!
 For the order to trade:
 
 1. The trader can then let the CoW Protocol know about the order by sending the order details to the API
-2. The CoW Protocol would, before every auction, check wether or not the order is valid by simulating a `isValidSignature` call
+2. The CoW Protocol would, before every auction, check whether or not the order is valid by simulating a `isValidSignature` call
    * Internally, the `isValidSignature` call would compare the current block timestamp to the order's configured `validFrom` and only validate the signature once this is the case.
 3. Once the order matures, it will automatically be included in the next auction. This would make the order available to the CoW Protocol solvers for trading.
 4. The CoW Protocol contract would call the `isValidSignature` on-chain

@@ -11,7 +11,7 @@ description: >-
 
 ### What is CoW Swap & CoW Protocol
 
-CoW Swap is a Decentralized Application (DApp) and Protocol allowing users to exchange digital assets directly (peer-to-peer) and via existing trading decentralised exchanges.
+CoW Swap is a Decentralised Application (DApp) and Protocol allowing users to exchange digital assets directly (peer-to-peer) and via existing trading decentralised exchanges.
 
 Its novel design maximises trade efficiency and provides a competitive way to ensure best prices.
 
@@ -23,7 +23,7 @@ Additionally, CoW Swap allows for an improved user experience by facilitating ga
 
 ### Get familiar with CoW Swap
 
-CoW Swap uses CoW protocol. One easy way to get familiar with the protocol is by doing one trade in CowSwap:
+CoW Swap uses CoW Protocol. One easy way to get familiar with the protocol is by doing one trade in CoW Swap:
 
 * [https://swap.cow.fi](https://swap.cow.fi)
 
@@ -63,7 +63,7 @@ It’s worth mentioning that, if you build a tool or UI that creates trades, it�
 
 The explorer is a website that allows you to explore the protocol data.
 
-It’s the “Etherscan” for CoW protocol, so you will be able to find, among other things:
+It’s the “Etherscan” for CoW Protocol, so you will be able to find, among other things:
 
 * Order details, with trading status: You can get detailed information about executed, expired, or pending orders. This page is very convenient for directing users once they post an order ([example order](https://explorer.cow.fi/orders/0xa64f3559e33edebd2a1701050db6dff8089c7c42c4d2d842669466c4693d698100000000005ef87f8ca7014309ece7260bbcdaeb61f0377d))
 * Order for a given account: You can get detailed information about executed, expired, or pending orders for a given trader ([example orders for trader](https://explorer.cow.fi/address/0x00000000005ef87f8ca7014309ece7260bbcdaeb))
@@ -73,9 +73,9 @@ It’s the “Etherscan” for CoW protocol, so you will be able to find, among 
 
 The protocol requires valid signed orders. There’s different ways in which someone could sign an order:
 
-* Off-chain signing (EIP-712): Allow gass-less trading for EOA like Metamask. Learn [how to sign orders](how-to-submit-orders-via-the-api/signing-the-order)
-* Presign: Sign an order using an ethereum transaction. Convenient for Smart Contract integrations. See the [setPresign](https://github.com/cowprotocol/contracts/blob/7842d494c63224387e7e67f75bcd31775543098c/src/contracts/mixins/GPv2Signing.sol#L86) solidity function for more details
-* Smart Contract Signing (EIP-1271): Gass-less signing for smart contracts. [Here](how-to-place-erc-1271-smart-contract-orders/introduction) is a tutorial on how to use this type of signatures.
+* Off-chain signing (EIP-712): Allow gas-less trading for EOA like Metamask. Learn [how to sign orders](how-to-submit-orders-via-the-api/signing-the-order)
+* Pre-sign: Sign an order using an ethereum transaction. Convenient for Smart Contract integrations. See the [setPreSignature](https://github.com/cowprotocol/contracts/blob/7842d494c63224387e7e67f75bcd31775543098c/src/contracts/mixins/GPv2Signing.sol#L86) solidity function for more details
+* Smart Contract Signing (EIP-1271): Gas-less signing for smart contracts. [Here](how-to-place-erc-1271-smart-contract-orders/introduction) is a tutorial on how to use this type of signatures.
 
 For more information on Signed orders, read [here](../overview/order-intents).
 
@@ -89,7 +89,7 @@ Start here your journey to learn about CoW Protocol
 
 ### API
 
-The API allows you to get direct access to the CoW protocol.
+The API allows you to get direct access to the CoW Protocol.
 
 The documentation is exposed using Swagger docs:
 
@@ -101,15 +101,13 @@ For more information about the API, learn more [here](how-to-submit-orders-via-t
 
 ### SDK
 
-The software development kit (SDK) is a Javascript library that provides tooling for accessing the API as well as some utilities like functions for order signing.
-
-It is written in Typescript, making it simpler to use in both a Typescript or a plain Javascript project.
+The Software Development Kit (SDK) is a TypeScript library that provides tooling for accessing the API as well as some utilities like functions for order signing. It is easily integrated with TypeScript projects, or plain JavaScript.
 
 More info in [SDK documents](../cow-sdk/introduction) or see an example on how to use it [here](https://github.com/anxolin/cow-examples/blob/main/src/pages/api/Orders.js#L6)
 
-### The graph
+### The Graph
 
-CoW Protocol graph provides an alternative way to consume protocol information.
+The CoW Protocol subgraph provides an alternative way to consume protocol information.
 
 More info in [https://github.com/cowprotocol/subgraph](https://github.com/cowprotocol/subgraph)
 
@@ -119,11 +117,3 @@ More info in [https://github.com/cowprotocol/subgraph](https://github.com/cowpro
 * NodeJS Trading Bot: Basic bot that creates a random trade: [https://github.com/cowprotocol/trading-bot](https://github.com/cowprotocol/trading-bot)
 * Python Trading script: [https://pastebin.com/cKXUz0SW](https://pastebin.com/cKXUz0SW)
 * Go Trading script: [https://pastebin.com/r787C2wT](https://pastebin.com/r787C2wT)
-
-## 👩‍🌾 Bonus: Join the team!
-
-There’s currently open positions for CoW Protocol.
-
-If you are looking for new challenges and opportunities, consider our [Open Positions](https://cow.fi/jobs).
-
-\

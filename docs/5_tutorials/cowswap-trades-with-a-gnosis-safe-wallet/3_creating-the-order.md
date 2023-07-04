@@ -3,7 +3,7 @@
 Let’s do an intermediate step and create a method to submit the order. The gist of the process is the following:
 
 * Get the quote of the trade to do
-* Create an order through the api and get an order id
+* Create an order through the API and get an order id
 * Use the order id to set a flag on-chain, saying you are ok with that trade
 
 I tried adding comments around the code
@@ -52,7 +52,7 @@ def cowswap_sell(safe, sell_token, buy_token):
         "from": safe.address,
         "sellTokenBalance": "erc20",
         "buyTokenBalance": "erc20",
-        "signingScheme": "presign" # Very important. this tells the api you are going to sign on chain
+        "signingScheme": "presign" # Very important. this tells the API you are going to sign on chain
     }
     orders_url = f"https://protocol-mainnet.gnosis.io/api/v1/orders"
     r = requests.post(orders_url, json=order_payload)

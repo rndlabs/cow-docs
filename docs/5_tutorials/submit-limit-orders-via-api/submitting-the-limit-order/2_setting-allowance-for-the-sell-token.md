@@ -6,7 +6,7 @@ This can either be done using Etherscan, e.g. to set an unlimited allowance for 
 
 ![](https://lh4.googleusercontent.com/NGTgGkxl564ffoySZvaY8fzZIn_luQ3-ZO2s1SkyOMtecwIweGjFCBukopBdgmY8JaTe6kf3Syx3Fiv_Z8VPmBRtFuuAdQVdPdnYYMmDmA4jCG22VCaT21AxlVkYtwL9cgBsV3OM07q_tGai6lHZB3sQanbF_i1SgVJgT9xz98yZq7izYD3UOgHKPBxRjQ)
 
-It can also be done programmatically e.g. using the following ethers typescript snippet:
+It can also be done programmatically e.g. using the following ethers TypeScript snippet:
 
 ```typescript
 import ERC20 from "@openzeppelin/contracts/build/contracts/ERC20.json";

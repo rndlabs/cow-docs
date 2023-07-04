@@ -1,6 +1,6 @@
 # Balancer Internal Balances
 
-The second mechanism is to use balances internal to the Vault. The Balancer V2 vault can accrue ERC20 token balances and keep track of them internally in order to allow extremely gas-efficient transfers and swaps. The CoW protocol contracts can make use of this in order to decrease the gas cost of settling a user order on-chain. In order for this to work, the user must approve the Vault relayer contract and have internal Vault balances available.
+The second mechanism is to use balances internal to the Vault. The Balancer V2 vault can accrue ERC20 token balances and keep track of them internally in order to allow extremely gas-efficient transfers and swaps. The CoW Protocol contracts can make use of this in order to decrease the gas cost of settling a user order on-chain. In order for this to work, the user must approve the Vault relayer contract and have internal Vault balances available.
 
 Internal balances can be withdrawn from the Vault at any time for their ERC20 equivalent amounts.
 

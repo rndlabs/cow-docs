@@ -2,7 +2,7 @@
 
 The SDK uses Pinata to upload it to IPFS, so you will need an API Key in order to upload it using the SDK.
 
-Alternativelly, you can upload the document on your own using any other service.
+Alternatively, you can upload the document on your own using any other service.
 
 ```typescript
 import { MetadataApi } from '@cowprotocol/app-data'

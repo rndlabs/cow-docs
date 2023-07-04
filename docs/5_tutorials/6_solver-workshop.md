@@ -6,23 +6,20 @@ description: FINDING THE BEST TRADING PATHS/SCENARIOS WITH YOUR SOLVER
 
 Here is a full video tutorial/workshop on how to build your own solver
 
-[https://youtu.be/ErPJthFGKrg](https://youtu.be/ErPJthFGKrg)\
-\
-At the heart of the CoW Protocol there are "solvers". In essence, a solver is a computer program that takes the orderbook as input, and computes the prices and traded amounts of all orders and liquidity sources (AMMs) that make the best possible overall trading experience. This problem, known as the batch auction problem, is an interesting and challenging optimization problem for which there is not a "perfect algorithm" for (and most likely will never be https://en.wikipedia.org/wiki/P\_versus\_NP\_problem).
+[https://youtu.be/ErPJthFGKrg](https://youtu.be/ErPJthFGKrg)
 
-In the spirit of decentralization, in CoW Protocol multiple independent solvers compete for finding the best solution to the batch auction problem. Every few seconds, a round of the competition takes place giving the participating solvers the chance to solve a batch reflecting the most recent orderbook state. The solver that outputs the \*best\* solution is rewarded, and thus its solution is the one to be settled on-chain.
+At the heart of the CoW Protocol there are "solvers". In essence, a solver is a computer program that takes the orderbook as input, and computes the prices and traded amounts of all orders and liquidity sources (AMMs) that make the best possible overall trading experience. This problem, known as the batch auction problem, is an interesting and challenging optimisation problem for which there is not a "perfect algorithm" for (and most likely will never be https://en.wikipedia.org/wiki/P_versus_NP_problem).
 
-This bounty aims at incentivizing the development of CoW Protocol solvers. More specifically, the challenge is to write a solver that finds good solutions to the batch auction problem. A good solution must comply with the solution specification, and should map to a good objective value - both of which will be formally verified by the CoW Swap driver.
+In the spirit of decentralisation, in CoW Protocol multiple independent solvers compete for finding the best solution to the batch auction problem. Every few seconds, a round of the competition takes place giving the participating solvers the chance to solve a batch reflecting the most recent orderbook state. The solver that outputs the \*best\* solution is rewarded, and thus its solution is the one to be settled on-chain.
+
+This bounty aims at incentivising the development of CoW Protocol solvers. More specifically, the challenge is to write a solver that finds good solutions to the batch auction problem. A good solution must comply with the solution specification, and should map to a good objective value - both of which will be formally verified by the CoW Swap driver.
 
 There are different avenues to explore for designing a solver that is competitive, including, but not limited to,
 
-\- Developing an efficient optimization algorithm
-
-\- Identifying and solving special problem instances that are "easy" to solve.
-
-\- Considering more liquidity sources (AMMs) in addition to those that are supplied.
-
-\- Integrating external dex-aggregators.
+* Developing an efficient optimisation algorithm
+* Identifying and solving special problem instances that are "easy" to solve.
+* Considering more liquidity sources (AMMs) in addition to those that are supplied.
+* Integrating external dex-aggregators.
 
 **References:**
 

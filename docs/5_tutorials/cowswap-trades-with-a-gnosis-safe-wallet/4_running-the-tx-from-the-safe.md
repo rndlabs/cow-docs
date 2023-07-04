@@ -1,6 +1,6 @@
-# Running the tx from the safe
+# Running the TX from the safe
 
-The last step is running a tx submission to the multisign using the previous method.
+The last step is running a TX submission to the multisig using the previous method.
 
 ```python
 def run_trade_sep_21():
@@ -22,8 +22,8 @@ def run_trade_sep_21():
     safe.post_transaction(safe_tx)
 ```
 
-This run will not be the typical ape safe tx. When you run the code you are actually calling the api and creating an order. You can create as many orders as you want BUT they are not valid until you sign them. In our case, executing the tx in the multisign will do the trick.
+This run will not be the typical `ape-safe` TX. When you run the code you are actually calling the API and creating an order. You can create as many orders as you want BUT they are not valid until you sign them. In our case, executing the TX in the multisig will do the trick.
 
-Once the tx is signed, you can query the `/solvable_orders` endpoint to see your trades avaiable to solvers. You can check the output from [https://api.cow.fi/mainnet/#/default/get\_api\_v1\_solvable\_orders](https://api.cow.fi/mainnet/#/default/get\_api\_v1\_solvable\_orders).
+Once the TX is signed, you can query the `/solvable_orders` endpoint to see your trades available to solvers. You can check the output from [https://api.cow.fi/mainnet/#/default/get\_api\_v1\_solvable\_orders](https://api.cow.fi/mainnet/#/default/get\_api\_v1\_solvable\_orders).
 
-After a few minutes I got two transfers, the first was `yfi` and `link` converted to `gusd` and on the second one `usdc` converted to `gusd`.
+After a few minutes I got two transfers, the first was `YFI` and `LINK` converted to `GUSD` and on the second one `USDC` converted to `GUSD`.

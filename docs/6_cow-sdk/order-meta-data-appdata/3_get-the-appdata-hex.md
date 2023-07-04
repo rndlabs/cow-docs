@@ -1,6 +1,6 @@
 # Get the AppData Hex
 
-The `AppData` Hex points to an IPFS document with the meta-data attached to the order.
+The `AppData` hex points to an IPFS document with the metadata attached to the order.
 
 You can calculate the `AppData` Hex, and its corresponding `cidV0` using the SDK:
 
