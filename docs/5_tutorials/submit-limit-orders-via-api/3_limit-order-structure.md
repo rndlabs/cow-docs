@@ -10,7 +10,7 @@ description: >-
 * **Buy Token:** the address of the token that is bought
 * **Sell Amount:** the amount of `sellToken` that is sold in wei
 * **Buy Amount:** the amount of `buyToken` that is bought in wei
-* **Receiver:** the address that will receive the proceedings of the trade. If this field is zero (the zero address `0x00...0`), then the user who signed the trade is going to receive the funds
+* **Receiver:** the address that will receive the proceeds of the trade. If this field is zero (the zero address `0x00...0`), then the user who signed the trade is going to receive the funds
 * **Valid To:** the timestamp (in seconds) until which the order is valid
 * **App Data:** extra information about the order. It is ignored by the smart contract outside of signature verification, but may be used off-chain for information on the order's origin or for referrals
 * **Fee Amount:** the amount of [protocol fees](../../overview/definitions) paid in `sellToken` wei. In the case for Limit Orders this field will always be `0.`
