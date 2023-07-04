@@ -39,4 +39,4 @@ Internal CoW Swap Operations
 
 #### FAQ
 
-Want to know more about CoW Swap and how it works. Head over to its [FAQ section](https://cowswap.exchange/#/faq).
+Want to know more about CoW Swap and how it works. Head over to its [FAQ section](https://swap.cow.fi/#/faq).
